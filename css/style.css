@@ -1,92 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 /* Global */
 @import './global/global.css';
+/* Header */
+@import './global/header.css';
+/* Footer */
+@import './global/footer.css';
 /* Componentes */
 @import './utilidades/componentes.css';
 /* Cores */
 @import './utilidades/cores.css';
-
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f6f7fb;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1 {
-  text-transform: uppercase;
-  margin: 4rem;
-  text-align: center;
-  color: #474d59;
-}
-
-.nav-item {
-  margin: 0rem 1rem;
-  font-family: kanit;
-  color: #f6f7fb;
-}
-
-.logo-2 {
-  font-family: kanit;
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 0rem 1.5rem;
-  letter-spacing: 1px;
-  color: #f6f7fb;
-}
-.navbar-nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-link:hover {
-  color: #f6f7fb;
-  transition: 0.3s;
-}
-.navbar-collapse {
-  font-size: 1.3rem;
-  justify-content: center;
-}
-.btn-danger {
-  border-radius: 0px 4px 4px 0px;
-  border: none;
-}
-
-.me-0 {
-  border-radius: 4px 0px 0px 4px;
-}
-
-header:before {
-  display: block;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: #ed3237;
-  /* background: rgb(102,10,10); */
-  background: linear-gradient(
-    180deg,
-    rgba(102, 10, 10, 1) 0%,
-    rgba(237, 50, 55, 1) 45%,
-    rgba(204, 36, 36, 1) 100%
-  );
-}
-
-.btn-outline-light {
-  margin-right: 30px;
-}
-
-.container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
 .rapid-item {
   align-items: center;
@@ -94,32 +18,4 @@ header:before {
   width: 180px;
   height: 200px;
   border: 2px solid black;
-}
-
-.links {
-  margin: auto;
-
-  border: 2px solid blue;
-}
-
-/* Media Query */
-@media (max-width: 600px) {
-  .logo-2 {
-    display: none;
-  }
-
-  .btn-outline-light {
-    display: none;
-  }
-
-  .me-0 {
-    font-size: 0.7rem;
-    width: 6rem;
-  }
-}
-
-@media (min-width: 1500px) {
-  .navbar-nav {
-    margin-left: -25rem;
-  }
 }
