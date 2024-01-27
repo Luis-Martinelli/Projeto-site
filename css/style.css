@@ -11,6 +11,9 @@
 @import './utilidades/componentes.css';
 /* Cores */
 @import './utilidades/cores.css';
+/* Tipografia */
+@import './utilidades/tipografia.css';
+
 
 .rapid-item {
   align-items: center;

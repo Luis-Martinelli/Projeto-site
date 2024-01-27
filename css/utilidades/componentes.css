@@ -8,7 +8,7 @@
   }
   .botao {
     display: inline-block;
-    padding: 16px 36px;
+    padding: 12px 30px;
     background: linear-gradient(#A9161C, #7E1E07);
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -24,20 +24,32 @@
     cursor: pointer;
   }
   .botao:hover {
-    background: linear-gradient(#A9161C, #B03033);
+    background: linear-gradient(#a11419, #721c06 );
   }
   .botao.secundario {
     background: var(--cor-10);
     color: var(--cor-2);
   }
+  
   .botao.seta {
     display: flex;
     align-items: center;
   }
   .botao.dejem {
     border-radius: 0px 4px 4px 0px;
-    background-color: blue;
+    margin: 0;
   }
+  .botao.login {
+    padding: 1px 20px;
+    background: transparent;
+    border: 1px solid var(--cor-0);
+  }
+  .botao.login:hover {
+    background: var(--cor-1);
+    border: 1px solid var(--cor-1);
+    color: var(--cor-10);
+  }
+
   .botao.seta::after {
     content: '';
     display: inline-block;
