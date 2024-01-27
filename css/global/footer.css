@@ -55,7 +55,25 @@ footer:before {
   grid-column: 2;
   margin-top: 40px;
 }
-
+.drop-f {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  transition: 5s;
+}
+.drop-f.ativa {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: 5s;
+}
+.ico-f.ativa {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+.ico-f {
+  transition: .3s;
+}
 @media (max-width: 800px) {
   .footer img {
     display: none;

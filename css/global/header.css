@@ -11,21 +11,33 @@
 
 .header p {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 24px;
 }
 
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 32px;
 }
 
 .header-menu a {
-  color: var(--cor-0);
+  color: var(--cor-4);
   display: inline-block;
   padding: 16px 0px;
   position: relative;
 }
+.header-menu p {
+  display: flex;
+  color: var(--cor-4);
+  display: inline-block;
+  padding: 16px 0px;
+}
+
+.header-menu p:hover {
+  color: var(--cor-0);
+  cursor: pointer;
+}
+
 
 .header-menu a:after {
   content: '';
@@ -43,8 +55,8 @@
   width: 100%;
 }
 
-header-menu a:hover {
-  background: var(--cor-12);
+.header-menu a:hover {
+  color: var(--cor-0);
 }
 .header-bg {
   background-color: var(--cor-10);
@@ -72,6 +84,108 @@ header:after {
   color: #f6f7fb;
 }
 
+.form input[type="text"] {
+  padding: 8px;
+  border-radius: 4px 0px 0px 4px;
+  background: var(--cor-1);
+  font: 400 1rem/1.5 Roboto,sans-serif;
+  border: 1px solid var(--cor-1);
+  box-sizing: border-box;
+  width: 180px;
+}
+.form input[type="text"]:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+}
+.form {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-left: 40px;
+}
+#dropdown {
+  position: relative;
+}
+
+.dropdown:before {
+  content: "";
+width: 20px;
+height: 20px;
+background: var(--cor-10);
+display: block;
+position: absolute;
+transform: rotate(45deg);
+border-radius: 4px 0 0 0;
+top: -10px;
+left: 110px;
+}
+.dropdown li {
+  padding: 16px;
+  border-bottom: 1px solid var(--cor-9);
+}
+.dropdown li:last-child {
+  border-bottom: none;
+}
+.dropdown ul {
+  align-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: var(--cor-10);
+  color: var(--cor-4);
+  border-radius: 4px;
+  text-align: start;
+  left: 470px;
+  top: 80px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 16px 4px rgba(0,0,0,.3);
+}
+.dropdown.ativo {
+  opacity: 1;
+  visibility: visible;
+  display:block;
+  transition: 0.5s;
+}
+
+.dropdown-menu {
+  display: grid;
+}
+
+.dropdown-menu li:before {
+content: "";
+display: inline-block;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+border: 2px solid #0d0e0f;
+transition: .3s;
+margin-right: 8px;
+background-color: var(--cor-p1);
+}
+
+.dropdown-menu a:hover {
+  color: var(--cor-0);
+}
+
+.ico.ativo {
+  transform: rotate(180deg);
+  transition: .5s;
+}
+.ico {
+  transition: .5s;
+}
+.menu-f {
+  cursor: pointer;
+}
+.menu-f:hover {
+  color: var(--cor-0);
+}
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
