@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Global */
+@import './global/global.css';
+/* Header */
+@import './global/header.css';
+/* Footer */
+@import './global/footer.css';
+/* Componentes */
+@import './utilidades/componentes.css';
+/* Cores */
+@import './utilidades/cores.css';
+/* Tipografia */
+@import './utilidades/tipografia.css';
+/* Tela de Login */
+@import './login/login.css';
+/* Comando */
+@import './comando/comando.css';
+
+.rapid-item {
+  align-items: center;
+  background-color: #fff;
+  width: 180px;
+  height: 200px;
+  border: 2px solid black;
+}

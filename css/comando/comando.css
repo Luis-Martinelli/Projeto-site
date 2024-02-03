@@ -1,0 +1,56 @@
+.comando-bg {
+  background-color: var(--c12);
+  box-shadow: inset 0 -60px var(--c9);
+}
+.title {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1;
+  justify-items: start;
+  align-items: center;
+  padding: 60px 0px;
+}
+.title h1:after {
+  content: url(/Projeto-site/img/icons/tenente-coronel-pm.png);
+  margin-left: 20px;
+}
+.colun-cmt {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.text p {
+  margin-top: 30px;
+  text-align: justify;
+}
+.unidades-bg {
+  background-color: var(--c9);
+}
+.bottom-cmt {
+  height: 120px;
+  width: 100%;
+  background-color: var(--c9);
+  color: var(--c2);
+  text-align: center;
+}
+.bottom-cmt h3 {
+  padding: 24px 0px;
+}
+.unidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.unidades li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-image: linear-gradient(#ddff01, #22ee00);
+  border: 2px solid #0e1013;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
