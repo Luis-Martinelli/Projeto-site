@@ -11,7 +11,7 @@
   padding: 60px 0px;
 }
 .title h1:after {
-  content: url(/Projeto-site/img/icons/tenente-coronel-pm.png);
+  content: url(/img/icons/tenente-coronel-pm.png);
   margin-left: 20px;
 }
 .colun-cmt {
@@ -25,6 +25,8 @@
 }
 .unidades-bg {
   background-color: var(--c9);
+  padding-bottom: 180px;
+  box-shadow: inset 0 -180px var(--c12);
 }
 .bottom-cmt {
   height: 120px;
@@ -32,6 +34,7 @@
   background-color: var(--c9);
   color: var(--c2);
   text-align: center;
+  padding-bottom: 160px;
 }
 .bottom-cmt h3 {
   padding: 24px 0px;
