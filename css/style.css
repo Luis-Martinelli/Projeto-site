@@ -17,6 +17,8 @@
 @import './login/login.css';
 /* Comando */
 @import './comando/comando.css';
+/* Galeria de Fotos */
+@import './galeria/galeria.css';
 
 .rapid-item {
   align-items: center;

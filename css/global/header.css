@@ -130,11 +130,10 @@ header:after {
   color: var(--c4);
   border-radius: 4px;
   text-align: start;
-  left: 470px;
+  left: 600px;
   top: 80px;
   transition: 0.5s;
   opacity: 0;
-  visibility: hidden;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.3);
 }
 .dropdown.ativo {
@@ -155,7 +154,7 @@ header:after {
   border: 2px solid #0d0e0f;
   transition: 0.3s;
   margin-right: 8px;
-  background-color: var(--c-p1);
+  background-image: linear-gradient(to bottom, var(--c-p1), var(--c-p4));
 }
 .dropdown-menu a:hover {
   color: var(--c0);
