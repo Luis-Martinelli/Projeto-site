@@ -1,0 +1,18 @@
+.endereco-bg {
+  background-color: var(--c12);
+  text-align: center;
+  padding: 100px 0px;
+}
+.endereco-bg h1::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 46px;
+  margin-right: 10px;
+  background-color: var(--c-p2);
+}
+.cs {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px;
+}

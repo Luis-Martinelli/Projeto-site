@@ -36,3 +36,5 @@ $('.menu-f').on('click', function () {
   $('.drop-f').slideToggle(800);
   $('.ico-f').toggleClass('ativa');
 });
+// Animação
+new SimpleAnime();

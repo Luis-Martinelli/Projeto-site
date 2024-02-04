@@ -13,12 +13,18 @@
 @import './utilidades/cores.css';
 /* Tipografia */
 @import './utilidades/tipografia.css';
+/* Animação */
+@import './utilidades/animacao.css';
 /* Tela de Login */
 @import './login/login.css';
+/* Home | Banner */
+@import './home/banner.css';
 /* Comando */
 @import './comando/comando.css';
 /* Galeria de Fotos */
 @import './galeria/galeria.css';
+/* Endereços */
+@import './enderecos/enderecos.css';
 
 .rapid-item {
   align-items: center;
