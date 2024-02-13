@@ -1,0 +1,8 @@
+.emphasis-bg h1::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 46px;
+  margin-right: 10px;
+  background-color: var(--c-p2);
+}

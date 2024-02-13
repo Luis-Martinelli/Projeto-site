@@ -31,10 +31,10 @@ footer:before {
 .footer-contato ul {
   margin-bottom: 32px;
 }
-.footer-informacoes span {
-  display: block;
-  height: 36px;
+.footer-informacoes .menu-f {
+  cursor: pointer;
 }
+
 .footer-redes {
   display: flex;
   align-items: center;

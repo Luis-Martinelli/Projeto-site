@@ -19,6 +19,10 @@
 @import './login/login.css';
 /* Home | Banner */
 @import './home/banner.css';
+/* Home | Acesso Rápido */
+@import './home/links.css';
+/* Home | Destaque */
+@import './home/destaque.css';
 /* Comando */
 @import './comando/comando.css';
 /* Galeria de Fotos */

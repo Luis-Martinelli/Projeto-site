@@ -69,13 +69,13 @@
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m">
-          <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+          <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
           <li><a href="./galeria.html">Galeria de Fotos</a></li>
           <li><a href="./enderecos.html">Endereços</a></li>
           <li><a href="./footer">Contato</a></li>
         </ul>
         <button id="show" type="button" class="botao login">Login</button>
-        <div class="dropdown font-1-m">
+        <div class="font-1-m dropdown" data-droptarget="dropdown">
           <ul class="dropdown-menu">
          <li><a href="./comando.html">Comandante</a></li>
          <li><a href="#">Histórico do Batalhão</a></li>
@@ -87,24 +87,162 @@
        
     </div>
   </header>
+
+
   
+    <!-- Banner Rotativo -->
+    <article id="banner" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div id="indicadores" class="carousel-indicators">
+        <button id="index"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide-to="0"
+        class="active"
+        > </button>
+        <button id="index"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide-to="1"
+        class=""
+        ></button>
+        <button id="index"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide-to="2"
+        ></button>
+        <button id="index"
+        type="button"
+        data-bs-target="#banner"
+        data-bs-slide-to="3"
+        ></button>
+      </div> -->
+  
+      <div class="carousel-item active">
+        <img
+          id="img"
+          src="./img/3.jpg"
+          alt=""
+          class="d-block w-100"
+        />
+      </div>
+      
+      <!-- <div class="carousel-item">
+        <img src="/imagens/industrial.jpg" alt="" class="d-block w-100" />
+        <div class="carousel-caption text-left">
+          <h2 class="text-slide">OPERAÇÃO IMPACTO</h2>
+          <p class="text-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea distinctio et dolor alias impedit doloribus vero natus adipisci dignissimos cum</p>
+          <a href="/" class="btn-secundario">Saiba Mais</a>
+        </div>
+      </div> -->
+  
+      <!-- <div class="carousel-item">
+        <img src="/imagens/1.jpg" alt="" class="d-block w-100" />
+      </div>
+      <div class="carousel-item">
+        <img src="/imagens/conjunta1.jpg" alt="" class="d-block w-100" />
+      </div>
+    </div>
+  
+      <button
+      type="buttom"
+      class="carousel-control-prev"
+      data-bs-target="#banner"
+      data-bs-slide="prev"
+      >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      type="buttom"
+      class="carousel-control-next"
+      data-bs-target="#banner"
+      data-bs-slide="next"
+      >
+      <span class="carousel-control-next-icon"></span>
+      </button> -->
+    </article>
+
+    <div class="links-bg">
+      <h1 class="font-1-xxl cor-1">Acesso Rápido</h1>
+    </div>
+  
+<!-- Acesso Rápido -->
+<main class="links-shadow">
+<div class="container links">
+  <a href="https://ead.policiamilitar.sp.gov.br/login/index.php"  target="_blank">
+    <div  class="links-item"> <img src="./img/icons/ead.png" alt="EAD-PVT" >
+      <p class="font-1-m">EAD e PVT</p> 
+   </div>
+  </a>
+  <a href="https://www.ciaf.policiamilitar.sp.gov.br/folhadepagamento/autenticacaosegura.aspx" target="_blank">
+    <div class="links-item">
+       <img src="./img/icons/ciaf_120.png" alt="Holerite" >
+       <p class="font-1-m">Holerite</p> 
+     </div>
+   </a>  
+ <a href="http://prdwascr.ccb.policiamilitar.sp.gov.br/aplicacoes/sgi/"  target="_blank">
+   <div class="links-item">
+     <img src="./img/icons/SIGES1.png" alt="SINGES" >
+      <p class="font-1-s">Assentamento Individual</p> 
+   </div>
+  </a>
+   <a href="http://sisbol.intranet.pm.sp.gov.br/_sisbolsc8/frmlogin/"  target="_blank">
+    <div  class="links-item">
+      <img src="./img/icons/sisbol.JPG" alt="SISBOL" >
+      <br>
+       <p class="font-1-m">SISBOL</p> 
+    </div>
+ </a>
+  <a href="https://acesso.cofin.sp.gov.br/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Dcode%26client_id%3Dclient_id_angular%26state%3DQVBtamdaZ0JFRHc4RnM3dGRpQX5MMkNzbnZZNW1RQWhRVm1UaHhUWmlTZX5jsemicolonhttps%25253A%25252F%25252Fcofin.sp.gov.br%25252F%26redirect_uri%3Dhttps%253A%252F%252Fcofin.sp.gov.br%252Findex.html%26scope%3Dopenid%2520profile%2520email%2520offline_access%2520api%2520identity_api%2520diligencia_api%2520relatorios_api%2520sefaz_integration_api%2520gestao_patrimonial_api%26code_challenge%3DgBKN7iCaEm6hsqBQjZeLAe4SgBArMnTZQKCG5YB9_-4%26code_challenge_method%3DS256%26nonce%3DQVBtamdaZ0JFRHc4RnM3dGRpQX5MMkNzbnZZNW1RQWhRVm1UaHhUWmlTZX5j"  target="_blank">
+      <div  class="links-item">
+        <img src="./img/icons/cofin3.0.png" alt="COFIN 3.0" >
+        <p class="font-1-m">COFIN 3.0</p> 
+      </div>
+  </a>
+</div>
+</main>
+
+<main class="links-shadow-2">
+  <div class="container links">
+    <a href="https://sei.sp.gov.br/sip/login.php?sigla_orgao_sistema=GESP&sigla_sistema=SEI"  target="_blank">
+      <div  class="links-item">
+         <img src="./img/icons/sei.png" alt="SEI-SP" >
+         <p class="font-1-m">Acessar o SEI!</p> 
+       </div>
+    </a>
+
+    <a href="https://www.sim.prodesp.sp.gov.br/sim/"  target="_blank">
+      <div  class="links-item"> <img src="./img/icons/SIM-2.png" alt="SIM" >
+        <p class="font-1-s">Sistema Integrado de Multas</p> 
+     </div>
+    </a>
+    <a href="http://prdwinet.ccb.policiamilitar.sp.gov.br/assinatura/play.aspx"  target="_blank">
+      <div  class="links-item"> <img src="./img/icons/patrimonio.png" alt="Pesquisar" >
+        <p class="font-1-s">Consulta de Patrimônio</p> 
+     </div>
+    </a>
+    <a href="http://prdwinet.ccb.policiamilitar.sp.gov.br/assinatura/play.aspx"  target="_blank">
+      <div  class="links-item"> <img src="./img/icons/200anos.png" alt="Logo-200anos" >
+        <p class="font-1-s">Assinatura de Email</p> 
+     </div>
+    </a>
+    <a href="http://prdwinet.ccb.policiamilitar.sp.gov.br/assinatura/play.aspx"  target="_blank">
+      <div  class="links-item"> <img src="./img/icons/email-list.png" alt="Logo-email" >
+        <p class="font-1-s">Lista de e-mails</p> 
+     </div>
+    </a>
+
+  </div>
+</main>
+<article class="emphasis-bg">
+<h1 class="font-1-xxl cor-12 container">Ocorrência destaque</h1>
+</article>
+
 
   <div class="cs">
   <img src="/img/construcao.png" alt="">
   </div>
 
-  <!-- <h1 class="font-1-xxl container">Acesso Rápido<span class="cor-p1">.</span></h1>
-
-  <div class="container">
-    <div  class="rapid-item">
-      <img src="/icons/ead.png" alt="EAD-PVT" class="links">
-    </div>
-    <div  class="rapid-item"></div>
-    <div  class="rapid-item"></div>
-    <div  class="rapid-item"></div>
-    <div  class="rapid-item"></div>
-  </div> -->
-
+<!-- Footer -->
   <footer class="footer-bg">
     <div class="footer container">
       <img src="./img/12bpmi.png" alt="Brasão do 12ºBPMI" />
@@ -131,7 +269,7 @@
         <nav>
           <ul class="font-1-m cor-5">
             <li><a href="./">Home</a></li>
-            <li><p class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></p></li>
+            <li><a class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></a></li>
             <div class="drop-f">
               <li><a href="">Comandante</a></li>
               <li><a href="">Histórico do Batalhão</a></li>
@@ -152,6 +290,6 @@
   </footer>
   <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
-
+  
  </body>
 </html>
