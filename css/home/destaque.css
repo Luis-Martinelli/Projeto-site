@@ -1,8 +1,24 @@
-.emphasis-bg h1::before {
+.destaque-bg {
+  background-color: var(--c11);
+  padding-bottom: 60px;
+  /* box-shadow: inset 40px 80px var(--c1); */
+}
+.emphasis h1 {
+  padding-bottom: 60px;
+}
+.emphasis h1::before {
   content: '';
   display: inline-block;
   width: 12px;
   height: 46px;
   margin-right: 10px;
   background-color: var(--c-p2);
+}
+.destaque {
+  display: flex;
+}
+
+.destaque-item {
+  display: grid;
+  justify-items: center;
 }
