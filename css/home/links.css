@@ -16,12 +16,19 @@
 }
 .links-shadow-2 {
   margin-top: 32px;
+  padding-bottom: 120px;
 }
 .links {
   display: flex;
   flex-wrap: nowrap;
   gap: 32px;
   justify-content: space-between;
+}
+
+.links-bg ::after {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  right: 134px;
 }
 
 .links-item {
@@ -45,6 +52,12 @@
   border-color: rgba(0, 0, 0, 0.075);
   transition: 0.2s;
 }
-.links-shadow-2 {
-  padding-bottom: 120px;
+
+@media (max-width: 800px) {
+  .links-bg h1::before {
+    height: 24px;
+  }
+  .links-bg ::after {
+    display: none;
+  }
 }

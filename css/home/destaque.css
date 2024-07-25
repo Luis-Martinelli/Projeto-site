@@ -1,10 +1,13 @@
 .destaque-bg {
   background-color: var(--c11);
-  padding-bottom: 60px;
+  height: 380px;
+  margin-bottom: 120px;
+
   /* box-shadow: inset 40px 80px var(--c1); */
 }
 .emphasis h1 {
   padding-bottom: 60px;
+  text-align: center;
 }
 .emphasis h1::before {
   content: '';
@@ -15,10 +18,35 @@
   background-color: var(--c-p2);
 }
 .destaque {
+  padding-top: 32px;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .destaque-item {
   display: grid;
   justify-items: center;
+  align-items: center;
+}
+
+.destaque-item img {
+  max-width: 150px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  box-shadow: -2px 2px 0px 0px var(--c-p3);
+}
+.destaque-item a {
+  margin-top: 8px;
+}
+
+@media (max-width: 800px) {
+  .emphasis h1::before {
+    height: 24px;
+  }
+}
+@media (max-width: 1090px) {
+  .destaque {
+    flex-wrap: wrap;
+  }
 }

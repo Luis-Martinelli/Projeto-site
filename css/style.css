@@ -29,11 +29,11 @@
 @import './galeria/galeria.css';
 /* Endereços */
 @import './enderecos/enderecos.css';
-
-.rapid-item {
-  align-items: center;
-  background-color: #fff;
-  width: 180px;
-  height: 200px;
-  border: 2px solid black;
-}
+/* Area de Atuação */
+@import './home/area.css';
+/* Histórico */
+@import './home/history.css';
+/* emails */
+@import './emails/emails.css';
+/* detaque-em */
+@import './destaque/destaque-em.css';

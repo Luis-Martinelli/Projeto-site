@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./css/style.min.css" as="style">
     
     <script src="https://kit.fontawesome.com/0bb2a92b24.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -13,12 +14,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>12º BPM/I</title>
   </head>
 
 <body>
 
-  <!-- Login -->
+  <div class="modal">
+      <div class="modal-header">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </div>
+        <div class="modal-body">
+          <p>Insira o ID da escala</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close">OK</button>
+        </div>
+  </div>
+  <div class="modalShadow"></div>
+
   <dialog class="popup">
     <span class="close-btn"><i class="fa-classic fa-x" style="color: #f7f7f7;"></i></span>
     <div class="forms">
@@ -48,39 +68,38 @@
      </div>
     </dialog>
 
-
-
-  <header class="header-bg">
+  <header class="header-bg" id="topo">
     <div class="container header">
-        <a class="logo-2" href="./"><img src="./img/icons/brasão-nav.png" alt="Brasão do Batalhão" />
+        <a class="logo-2" href="/index.html"><img src="./img/icons/brasão-nav.png" alt="Brasão do Batalhão" />
         12ºBPMI</a>
       <div>
       <form class="form">
-        <input
+        <input id="idDejem"
           class="form-control"
+          name="id"
           type="text"
           placeholder="Digite o ID da escala"
           maxlength="7"
+          required="required"
           value=""
           
-        /><button class="botao dejem" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        /><button class="botao dejem" type="button" onclick="validar()"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
 
-      <nav aria-label="primaria">
+      <nav aria-label="primaria" class="js-menu">
         <ul class="header-menu font-1-m">
           <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
           <li><a href="./galeria.html">Galeria de Fotos</a></li>
           <li><a href="./enderecos.html">Endereços</a></li>
-          <li><a href="./footer">Contato</a></li>
+          <li><a href="#footer">Contato</a></li>
         </ul>
         <button id="show" type="button" class="botao login">Login</button>
         <div class="font-1-m dropdown" data-droptarget="dropdown">
           <ul class="dropdown-menu">
          <li><a href="./comando.html">Comandante</a></li>
-         <li><a href="#">Histórico do Batalhão</a></li>
-         <li><a href="#">Heráldica do Brasão</a></li>
-         <li><a href="#">Área de Atuação</a></li>
+         <li><a href="#area">Área de Atuação</a></li>
+         <li><a href="#historico">Histórico do Batalhão</a></li>
        </ul>
      </div>
       </nav>
@@ -88,84 +107,44 @@
     </div>
   </header>
 
+    <section class="slider">
 
-  
-    <!-- Banner Rotativo -->
-    <article id="banner" class="carousel slide" data-bs-ride="carousel">
-      <!-- <div id="indicadores" class="carousel-indicators">
-        <button id="index"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide-to="0"
-        class="active"
-        > </button>
-        <button id="index"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide-to="1"
-        class=""
-        ></button>
-        <button id="index"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide-to="2"
-        ></button>
-        <button id="index"
-        type="button"
-        data-bs-target="#banner"
-        data-bs-slide-to="3"
-        ></button>
-      </div> -->
-  
-      <div class="carousel-item active">
-        <img
-          id="img"
-          src="./img/industrial.jpg"
-          alt=""
-          class="d-block w-100"
-        />
-      </div>
-      
-      <!-- <div class="carousel-item">
-        <img src="/imagens/industrial.jpg" alt="" class="d-block w-100" />
-        <div class="carousel-caption text-left">
-          <h2 class="text-slide">OPERAÇÃO IMPACTO</h2>
-          <p class="text-slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea distinctio et dolor alias impedit doloribus vero natus adipisci dignissimos cum</p>
-          <a href="/" class="btn-secundario">Saiba Mais</a>
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1"> 
+        <input type="radio" name="radio-btn" id="radio2"> 
+        <input type="radio" name="radio-btn" id="radio3"> 
+        <!-- slides -->
+        <div class="slide first">
+          <img id="img" src="./img/banner-pm-em-numeros-marco.jpg" alt=""/>
         </div>
-      </div> -->
-  
-      <!-- <div class="carousel-item">
-        <img src="/imagens/1.jpg" alt="" class="d-block w-100" />
+        <div class="slide">
+          <img id="img" src="./img/banner-papodemike.jpg" alt=""/>
+        </div>
+        <div class="slide">
+          <img id="img" src="./img/banner-192-anos.jpg" alt=""/>
+        </div>
+         <!-- navigation auto -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="/imagens/conjunta1.jpg" alt="" class="d-block w-100" />
-      </div>
+     
+    </section>
+    <div class="up-to-top" >
+      <i class="fa-solid fa-arrow-up"></i>
     </div>
-  
-      <button
-      type="buttom"
-      class="carousel-control-prev"
-      data-bs-target="#banner"
-      data-bs-slide="prev"
-      >
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button
-      type="buttom"
-      class="carousel-control-next"
-      data-bs-target="#banner"
-      data-bs-slide="next"
-      >
-      <span class="carousel-control-next-icon"></span>
-      </button> -->
-    </article>
 
-    <div class="links-bg">
+    <div class="links-bg"  id="access">
       <h1 class="font-1-xxl cor-1">Acesso Rápido</h1>
     </div>
   
-<!-- Acesso Rápido -->
 <section class="links-shadow">
 <div class="container links">
   <a href="https://ead.policiamilitar.sp.gov.br/login/index.php"  target="_blank">
@@ -225,7 +204,7 @@
         <p class="font-1-s">Assinatura de Email</p> 
      </div>
     </a>
-    <a href="./"  target="_blank">
+    <a href="./emails.html">
       <div  class="links-item"> <img src="./img/icons/email-list.png" alt="Logo-email" >
         <p class="font-1-s">Lista de e-mails</p> 
      </div>
@@ -233,72 +212,90 @@
   </div>
 </section>
 
-<article class="emphasis">
-   <h1 class="font-1-xxl cor-12 container">Destaque do mês</h1>
+<section class="emphasis" id="destaque">
+   <h1 class="font-1-xxl cor-12">Destaque do mês</h1>
   <div class="destaque-bg">
    <div class="destaque container">
   <div class="destaque-item">
-    <img src="./img/icons/login.svg" alt="">
-    <p class="font-1-m cor-4">PM destaque do EM</p><a href="" class="botao secundario">Saiba Mais</a> 
+    <img src="./img/sgt-matheus.png" alt="">
+    <p class="font-1-m cor-4">E.M.</p><a href="/destaque-em.html" class="botao secundario">Saiba Mais</a> 
+  </div>
+  
+  <div class="destaque-item">
+    <img src="./img/cb-machado.jpeg" alt="">
+    <p class="font-1-m cor-4">1ª CIA</p> <a href="/destaque-1cia.html" class="botao secundario">Saiba Mais</a> 
   </div>
   <div class="destaque-item">
-    <img src="./img/icons/login.svg" alt="">
-    <p class="font-1-m cor-4">PM destaque da 1ª CIA</p> <a href="" class="botao secundario">Saiba Mais</a> 
+    <img src="./img/sgt-contador.jpg" alt="">
+    <p class="font-1-m cor-4">2ª CIA</p><a href="/destaque-2cia.html" class="botao secundario">Saiba Mais</a>  
   </div>
   <div class="destaque-item">
-    <img src="./img/icons/login.svg" alt="">
-    <p class="font-1-m cor-4">PM destaque da 2ª CIA</p><a href="" class="botao secundario">Saiba Mais</a>  
+    <img src="./img/sgt-tochio.jpg" alt="">
+    <p class="font-1-m cor-4">3ª CIA</p><a href="/destaque-3cia.html" class="botao secundario">Saiba Mais</a> 
   </div>
   <div class="destaque-item">
-    <img src="./img/icons/login.svg" alt="">
-    <p class="font-1-m cor-4">PM destaque da 3ª CIA</p><a href="" class="botao secundario">Saiba Mais</a>  
+    <img src="./img/sd-candido.jpeg" alt="">
+    <p class="font-1-m cor-4">CIA FT</p> <a href="/destaque-ciaft.html" class="botao secundario">Saiba Mais</a> 
   </div>
+  
  </div>
 </div>
+</section>
+<span class="span"></span>
+<article class="area" id="area">
+  <h1 class="font-1-xxl cor-12">Área de Atuação</h1>
+  <div class="area-div">
+  <div>
+    <img src="img/mapa 12ºbpmi.png" alt="Mapa exibindo a área de atuação da OPM">
+  </div>
+</div>
+<span></span>
 </article>
 
-
-  <div class="cs">
-  <img src="/img/construcao.png" alt="">
-  </div>
-
-<!-- Footer -->
-  <footer class="footer-bg">
+  <article class="history" id="historico">
+    <h1 class="font-1-xxl cor-12">Histórico do Batalhão</h1>
+    <div class="history-bg">
+    <p class="font-1-s cor-3 container">
+      Em 1920, pouquíssimo é o que se sabe a respeito da atuação policial nessa época. O anuário de Botucatu registra uma administração policial, cuja frente se encontrava um Delegado de Policia auxiliado por um escrivão e o Major Pm Francisco B. da Cunha, um escrevente e um subdelegado. No dia 12 de setembro de 1957 a 3º Cia de Fuzileiros incorporada ao 7º Batalhão de Caçadores que se transformou em 4ª Cia de Fuzileiros Incorporada e foi instalada na Rua Rafael Sampaio, nº 81 Bairro Boa Vista, Botucatu. </p>
+    </div>
+  </article>
+  
+  <footer class="footer-bg" id="footer">
     <div class="footer container">
       <img src="./img/12bpmi.png" alt="Brasão do 12ºBPMI" />
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
-          <li><a href="tel:+551438825656">+55 14 3882-5656</a></li>
-          <li>
-            <a href="mailto:12bpmi@policiamilitar.sp.gov.br">12bpmi@policiamilitar.sp.gov.br</a>
+          <li><a href="tel:+551438825656"><i class="fa-solid fa-phone"></i> (14) 3882-5656</a></li>
+          <li><a href="mailto:12bpmi@policiamilitar.sp.gov.br"><i class="fa-regular fa-envelope"></i> 12bpmi@policiamilitar.sp.gov.br</a>
           </li>
           <li>Rua Gen. Júlio Marcondes Salgado, 414 - Vila Silvinha</li>
-          <li>Botucatu - São Paulo</li>
+          <li>Botucatu - São Paulo <a href="https://maps.app.goo.gl/xXBNVTf65fhgcVyt7" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></li>
         </ul>
         <div class="footer-redes">
-          <a href=""><img src="./img/redes/facebook.svg" alt="facebook" /></a>
-          <a href=""><img src="./img/redes/instagram.svg" alt="instagram"/></a>
-          <a href=""><img src="./img/redes/youtube.svg" alt="youtube" /></a>
-          <a href=""><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
+          <p class="font-2-m cor-4">
+            Siga nossas redes sociais
+          </p>
+          <a href="https://www.facebook.com/12BPMI" target="_blank"><img src="./img/redes/facebook.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/12bpmi/" target="_blank"><img src="./img/redes/instagram.svg" alt="instagram"/></a>
+          <a href="https://www.youtube.com/@PMESP/videos" target="_blank"><img src="./img/redes/youtube.svg" alt="youtube" /></a>
+          <a href="https://web.whatsapp.com/send/?phone=5511969230230" target="_blank"><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
         </div>
       </div>
 
       <div class="footer-informacoes">
         <h3 class="font-2-l-b cor-0">Navegação</h3>
-        <nav>
+        <nav class="js-menu">
           <ul class="font-1-m cor-5">
-            <li><a href="./">Home</a></li>
+            <li><a href="#topo">Home</a></li>
             <li><a class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></a></li>
             <div class="drop-f">
-              <li><a href="">Comandante</a></li>
-              <li><a href="">Histórico do Batalhão</a></li>
-              <li><a href="">Heráldica do Brasão</a></li>
+              <li><a href="/comando.html">Comandante</a></li>
+            <li><a href="#area">Área de Atuação</a></li>
+              <li><a href="#historico">Histórico do Batalhão</a></li>
             </div>
             <li><a href="./galeria.html">Galeria de Fotos</a></li>
-            <li><a href="./">Endereços</a></li>
-            <li><a href="./">Contato</a></li>
-            <li><a href="">Área de Atuação</a></li>
+            <li><a href="./enderecos.html">Endereços</a></li>
             
           </ul>
         </nav>

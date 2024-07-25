@@ -1,0 +1,87 @@
+.area h1::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 46px;
+  margin-right: 10px;
+  background-color: var(--c-p2);
+}
+.area {
+  position: relative;
+  padding: 60px 0px;
+  margin-bottom: 60px;
+}
+.area::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(/img/catedral-2.jpg) no-repeat;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.span {
+  display: block;
+  background-color: var(--c6);
+  height: 1px;
+  width: 100%;
+}
+.span::before {
+  content: '';
+  position: absolute;
+  height: 12px;
+  width: 60px;
+  background-color: var(--c-p2);
+  right: 0;
+  margin-top: -5px;
+}
+
+.area span {
+  display: block;
+  background-color: var(--c6);
+  height: 1px;
+  width: 100%;
+  margin-top: 68px;
+}
+
+.area span::before {
+  content: '';
+  position: absolute;
+  height: 12px;
+  width: 60px;
+  background-color: var(--c-p2);
+  margin-top: -5px;
+}
+
+.area h1 {
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.area-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area-div img {
+  transition: transform 0.3s;
+}
+
+.area-div img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 800px) {
+  .area h1::before {
+    height: 24px;
+  }
+  .area h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .area-div p {
+    display: none;
+  }
+}

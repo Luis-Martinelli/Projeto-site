@@ -1,0 +1,47 @@
+.history-bg {
+  background-color: var(--c11);
+  padding-bottom: 60px;
+}
+
+.history h1 {
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.history h1::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 46px;
+  margin-right: 10px;
+  background-color: var(--c-p2);
+}
+.history p {
+  padding-top: 60px;
+  text-align: justify;
+}
+
+.history p::after {
+  content: url(/img/dec/bottom-right-p.svg);
+  position: absolute;
+  right: 132px;
+}
+.history p::before {
+  content: url(/img/dec/top-left-p.svg);
+  position: absolute;
+  left: 132px;
+}
+
+@media (max-width: 1600px) {
+  .history p::after,
+  p::before {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .history h1::before {
+    height: 24px;
+  }
+}

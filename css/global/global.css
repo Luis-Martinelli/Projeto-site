@@ -29,3 +29,15 @@ img {
 [src$='.jpeg'] {
   border-radius: 4px;
 }
+.txt-s {
+  text-align: start;
+}
+.txt-c {
+  text-align: center;
+}
+.txt-e {
+  text-align: end;
+}
+.txt-j {
+  text-align: justify;
+}

@@ -5,18 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./css/style.min.css" as="style">
     
     <script src="https://kit.fontawesome.com/0bb2a92b24.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>12º BPM/I | Galeria de Fotos</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+
+    <title>12º BPM/I - Galeria de Fotos</title>
   </head>
 <body>
+    <div class="modal">
+      <div class="modal-header">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </div>
+        <div class="modal-body">
+          <p>Insira o ID da escala</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close">OK</button>
+        </div>
+  </div>
+  <div class="modalShadow"></div>
 
- <!-- Login -->
  <dialog class="popup">
   <span class="close-btn"><i class="fa-classic fa-x" style="color: #f7f7f7;"></i></span>
   <div class="forms">
@@ -46,7 +69,6 @@
    </div>
   </dialog>
   
- <!-- Header -->
   <header class="header-bg">
     <div class="container header">
       <a class="logo-2" href="./"><img src="./img/icons/brasão-nav.png" alt="Brasão do Batalhão" />
@@ -54,31 +76,32 @@
 
       <div>
       <form class="form">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Digite o ID da escala"
-          maxlength="7"
-          value=""
+        <input id="idDejem"
+        class="form-control"
+        name="id"
+        type="text"
+        placeholder="Digite o ID da escala"
+        maxlength="7"
+        required="required"
+        value=""
           
-        /><button class="botao dejem" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        /><button class="botao dejem" type="button" onclick="validar()"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
 
       <nav aria-label="primaria">
-        <ul class="header-menu font-1-m">
+        <ul class="header-menu font-1-m js-menu">
           <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
           <li><a href="./galeria.html">Galeria de Fotos</a></li>
           <li><a href="./enderecos.html">Endereços</a></li>
-          <li><a href="./footer">Contato</a></li>
+          <li><a href="#footer">Contato</a></li>
         </ul>
         <button id="show" type="button" class="botao login">Login</button>
         <div class="dropdown font-1-m">
           <ul class="dropdown-menu">
          <li><a href="./comando.html">Comandante</a></li>
-         <li><a href="#">Histórico do Batalhão</a></li>
-         <li><a href="#">Heráldica do Brasão</a></li>
-         <li><a href="#">Área de Atuação</a></li>
+         <li><a href="/index.html#area">Área de Atuação</a></li>
+         <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
        </ul>
      </div>
       </nav>
@@ -88,31 +111,313 @@
   <div class="galeria-bg">
     <h1 class="font-1-xxl cor-0">Galeria de fotos</h1>
   </div>
-  <div class="cs">
-  <img src="/img/construcao.png" alt="">
+  <div class="up-to-top" >
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+<div class="container">  
+<div class="box-galeria">
+  <div class="box-foto" data-anime="200">
+    <a href="/img/fotos/47.jpg" title="Foto 47">
+        <img src="/img/fotos/47.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="200">
+    <a href="/img/fotos/46.jpg" title="Foto 46">
+        <img src="/img/fotos/46.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="200">
+    <a href="/img/fotos/45.jpg" title="Foto 45">
+        <img src="/img/fotos/45.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>             
+    <div class="box-foto" data-anime="200">
+        <a href="/img/fotos/44.jpg" title="Foto 44">
+            <img src="/img/fotos/44.jpg">
+            <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+        </a>
+    </div>
+    <div class="box-foto" data-anime="300">
+      <a href="./img/fotos/43.jpg" title="Foto 43">
+          <img src="./img/fotos/43.jpg">
+          <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/42.jpg" title="Foto 42">
+        <img src="./img/fotos/42.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/41.jpg"  title="Foto 41">
+      <img src="./img/fotos/41.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/40.jpg"  title="Foto 40">
+      <img src="./img/fotos/40.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/39.jpg" title="Foto 39">
+      <img src="./img/fotos/39.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/38.jpg" title="Foto 38">
+      <img src="./img/fotos/38.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/37.jpg" title="Foto 37">
+      <img src="./img/fotos/37.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+  <a href="./img/fotos/36.jpg"  title="Foto 36">
+      <img src="./img/fotos/36.jpg">
+      <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+  </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/35.jpg"  title="Foto 35">
+        <img src="./img/fotos/35.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/34.jpg"  title="Foto 34">
+        <img src="./img/fotos/34.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/33.jpg"  title="Foto 33">
+        <img src="./img/fotos/33.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/32.jpg"  title="Foto 32">
+        <img src="./img/fotos/32.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/31.jpg"  title="Foto 31">
+        <img src="./img/fotos/31.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/30.jpg"  title="Foto 30">
+        <img src="./img/fotos/30.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/29.jpg"  title="Foto 29">
+        <img src="./img/fotos/29.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto" data-anime="300">
+    <a href="./img/fotos/28.jpg"  title="Foto 28">
+        <img src="./img/fotos/28.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/27.jpg"  title="Foto 27">
+        <img src="./img/fotos/27.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/26.jpg"  title="Foto 9">
+        <img src="./img/fotos/26.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/25.jpg"  title="Foto 25">
+        <img src="./img/fotos/25.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/24.jpg"  title="Foto 24">
+        <img src="./img/fotos/24.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/23.jpg"  title="Foto 23">
+        <img src="./img/fotos/23.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/22.jpg"  title="Foto 22">
+        <img src="./img/fotos/22.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/21.jpg"  title="Foto 21">
+        <img src="./img/fotos/21.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/20.jpg"  title="Foto 20">
+        <img src="./img/fotos/20.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/19.jpg"  title="Foto 19">
+        <img src="./img/fotos/19.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/18.jpg"  title="Foto 18">
+        <img src="./img/fotos/18.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/17.jpg"  title="Foto 17">
+        <img src="./img/fotos/17.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/16.jpg"  title="Foto 16">
+        <img src="./img/fotos/16.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/15.jpg"  title="Foto 15">
+        <img src="./img/fotos/15.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/14.jpg"  title="Foto 14">
+        <img src="./img/fotos/14.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/13.jpg"  title="Foto 13">
+        <img src="./img/fotos/13.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/12.jpg"  title="Foto 12">
+        <img src="./img/fotos/12.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/11.jpg"  title="Foto 11">
+        <img src="./img/fotos/11.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/10.jpg"  title="Foto 10">
+        <img src="./img/fotos/10.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/9.jpg"  title="Foto 9">
+        <img src="./img/fotos/9.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/8.jpg"  title="Foto 8">
+        <img src="./img/min/8.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/7.jpg"  title="Foto 7">
+        <img src="./img/fotos/7.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/6.jpg"  title="Foto 6">
+        <img src="./img/fotos/6.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/5.jpg"  title="Foto 5">
+        <img src="./img/fotos/5.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/4.jpg"  title="Foto 4">
+        <img src="./img/fotos/4.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/3.jpg"  title="Foto 3">
+        <img src="./img/fotos/3.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/2.jpg"  title="Foto 2">
+        <img src="./img/fotos/2.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
+  </div>
+  <div class="box-foto">
+    <a href="./img/fotos/1.jpg"  title="Foto 1">
+        <img src="./img/fotos/1.jpg">
+        <span class="zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+    </a>
   </div>
 
+  </div>
+</div>
 
-
-
-  <footer class="footer-bg">
+  <footer class="footer-bg" id="footer">
     <div class="footer container">
       <img src="./img/12bpmi.png" alt="Brasão do 12ºBPMI" />
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
-          <li><a href="tel:+551438825656">+55 14 3882-5656</a></li>
-          <li>
-            <a href="mailto:12bpmi@policiamilitar.sp.gov.br">12bpmi@policiamilitar.sp.gov.br</a>
-          </li>
+          <li><a href="tel:+551438825656"><i class="fa-solid fa-phone"></i> (14) 3882-5656</a></li>
+          <li><a href="mailto:12bpmi@policiamilitar.sp.gov.br"><i class="fa-regular fa-envelope"></i> 12bpmi@policiamilitar.sp.gov.br</a>
           <li>Rua Gen. Júlio Marcondes Salgado, 414 - Vila Silvinha</li>
-          <li>Botucatu - São Paulo</li>
+          <li>Botucatu - São Paulo <a href="https://maps.app.goo.gl/xXBNVTf65fhgcVyt7" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></li>
         </ul>
         <div class="footer-redes">
-          <a href=""><img src="./img/redes/facebook.svg" alt="facebook" /></a>
-          <a href=""><img src="./img/redes/instagram.svg" alt="instagram"/></a>
-          <a href=""><img src="./img/redes/youtube.svg" alt="youtube" /></a>
-          <a href=""><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
+          <a href="https://www.facebook.com/12BPMI" target="_blank"><img src="./img/redes/facebook.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/12bpmi/" target="_blank"><img src="./img/redes/instagram.svg" alt="instagram"/></a>
+          <a href="https://www.youtube.com/@PMESP/videos" target="_blank"><img src="./img/redes/youtube.svg" alt="youtube" /></a>
+          <a href="https://web.whatsapp.com/send/?phone=5511969230230" target="_blank"><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
         </div>
       </div>
 
@@ -123,14 +428,14 @@
             <li><a href="./">Home</a></li>
             <li><p class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></p></li>
             <div class="drop-f">
-              <li><a href="">Comandante</a></li>
-              <li><a href="">Histórico do Batalhão</a></li>
-              <li><a href="">Heráldica do Brasão</a></li>
+              <li><a href="/comando.html">Comandante</a></li>
+              <li><a href="/index.html#area">Área de Atuação</a></li>
+              <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+              
             </div>
             <li><a href="./galeria.html">Galeria de Fotos</a></li>
-            <li><a href="./">Endereços</a></li>
-            <li><a href="./">Contato</a></li>
-            <li><a href="">Área de Atuação</a></li>
+            <li><a href="./enderecos.html">Endereços</a></li>
+            <li><a href="#footer">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -141,6 +446,9 @@
    </footer>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   
-   <script src="./js/script.js"></script>
+   <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+   
   </body>
 </html>

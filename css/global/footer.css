@@ -36,9 +36,17 @@ footer:before {
 }
 
 .footer-redes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
+.footer-redes p {
+  grid-column: 1/-1;
+  text-align: center;
+  text-decoration: dashed;
+  padding-bottom: 24px;
+}
+
 .footer-contato li:nth-child(even):after {
   content: '';
   display: block;

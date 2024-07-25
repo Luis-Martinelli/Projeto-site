@@ -37,6 +37,9 @@
 .botao.dejem {
   border-radius: 0px 4px 4px 0px;
   margin: 0;
+  display: inline-block;
+  padding: 9px 16px;
+  box-sizing: border-box;
 }
 .botao.login {
   margin-left: 40px;
@@ -52,12 +55,6 @@
   background: var(--c1);
   border: 1px solid var(--c1);
   color: var(--c10);
-}
-
-.botao.dejem {
-  display: inline-block;
-  padding: 9px 16px;
-  box-sizing: border-box;
 }
 
 nav {

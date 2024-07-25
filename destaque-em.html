@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./css/style.min.css" as="style">
+    
+    <script src="https://kit.fontawesome.com/0bb2a92b24.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <title>12º BPM/I - Destaque EM</title>
+  </head>
+
+<body>
+
+  <div class="modal">
+    <div class="modal-header">
+      <i class="fa-solid fa-circle-exclamation"></i>
+    </div>
+      <div class="modal-body">
+        <p>Insira o ID da escala</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close">OK</button>
+      </div>
+</div>
+<div class="modalShadow"></div>
+
+  <dialog class="popup">
+    <span class="close-btn"><i class="fa-classic fa-x" style="color: #f7f7f7;"></i></span>
+    <div class="forms">
+      <div class="login-logo">
+        <img src="./img/icons/login.svg" alt="">
+      </div>
+      <div class="form-element">
+        <form action="">
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11">
+        </div>
+       <div class="form-element">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha">
+       </div>
+       <div class="form-element">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Lembre-me</label>
+       </div>
+       <div class="form-element">
+        <button>Acessar</button>
+       </div>
+      <div class="form-element">
+        <a href="">Esqueceu a Senha?</a>
+      </form>
+      </div>
+     </div>
+    </dialog>
+
+  <header class="header-bg">
+    <div class="container header">
+        <a class="logo-2" href="./"><img src="./img/icons/brasão-nav.png" alt="Brasão do Batalhão" />
+        12ºBPMI</a>
+      <div>
+      <form class="form">
+        <input id="idDejem"
+          class="form-control"
+          type="text"
+          placeholder="Digite o ID da escala"
+          maxlength="7"
+          value=""
+          
+        /><button class="botao dejem" type="button" onclick="validar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu js-menu font-1-m">
+          <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+          <li><a href="./galeria.html">Galeria de Fotos</a></li>
+          <li><a href="./enderecos.html">Endereços</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+        <button id="show" type="button" class="botao login">Login</button>
+        <div class="dropdown font-1-m">
+          <ul class="dropdown-menu">
+         <li><a href="./comando.html">Comandante</a></li>
+         <li><a href="/index.html#area">Área de Atuação</a></li>
+         <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+       </ul>
+     </div>
+      </nav>
+       
+    </div>
+  </header>
+
+  <div class="endereco-bg">
+    <article class="container">
+    <h1 class="font-1-xxl cor-0 txt-s">Policial do mês</h1>
+    <p class="font-2-l-b cor-4 txt-s" id="sub-title">Estado Maior</p>
+  </article>
+  </div>
+
+  <div class="backgroud">
+    <section class="container">
+      <div data-anime="200" class="enredo">
+      <div class="t">
+        <p class="font-1-m">JUNHO / 2024</p>
+        <h3>2º SGT PM MATHEUS</h3>
+        <span></span>
+      </div>
+      <div class="info">
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O 2º SGT PM MATHEUS ALBERTO DAS MERCES é um profissional competente e tem prestado excelentes serviços à Seção de Materiais e Reserva de Armas do 12º BPMI, demonstrando um alto nível de profissionalismo, dedicação e responsabilidade em suas atividades. <br>  <br>   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Além de sua vasta experiência técnica, manifesta lealdade aos seus superiores, pares e subordinados, realiza de forma ímpar a inclusão/descaga de materiais da área do Batalhão, controla os materiais bélicos da unidade e os distribui entre as OPM subordinadas. Elabora os processos de compra/transferência de armas dos policiais militares da ativa e veteranos, além de confeccionar os pedidos de Autorização de Porte de Arma de Fogo para Inativos, colaborando assim, com seu elevado nível de conhecimento na área em que atua. Está sempre disposto a ajudar proativamente e contribui sempre que solicitado. <br>  <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Desta forma, por ser referência positiva e exemplo digno a ser seguido, extremamente disciplinado e apresentar conduta leal ao Comando, torna-o merecedor do devido reconhecimento, sendo escolhido o Policial do Mês de junho do EM. <br>  <br>
+          </p> 
+          <br> <br>
+
+          
+      </div>
+      <img data-anime="600" src="/img/sgt-matheus.png" alt="" class="fadeInDown">
+      <h4>ALEXANDER CAGLIARI MACHADO</h4>
+      <p>Maj PM Cmt Interino do 12º BPM/I</p>
+    </div>
+    <a href="./index.html#destaque" class="botao secundario back"><i class="fa-solid fa-angle-left"></i>voltar</a>
+    </section>
+  </div>
+
+
+
+  <footer class="footer-bg" id="footer">
+    <div class="footer container">
+      <img src="./img/12bpmi.png" alt="Brasão do 12ºBPMI" />
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-m cor-5">
+          <li><a href="tel:+551438825656"><i class="fa-solid fa-phone"></i> (14) 3882-5656</a></li>
+          <li><a href="mailto:12bpmi@policiamilitar.sp.gov.br"><i class="fa-regular fa-envelope"></i> 12bpmi@policiamilitar.sp.gov.br</a>
+          <li>Rua Gen. Júlio Marcondes Salgado, 414 - Vila Silvinha</li>
+          <li>Botucatu - São Paulo <a href="https://maps.app.goo.gl/xXBNVTf65fhgcVyt7" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></li>
+        </ul>
+        <div class="footer-redes">
+          <a href="https://www.facebook.com/12BPMI" target="_blank"><img src="./img/redes/facebook.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/12bpmi/" target="_blank"><img src="./img/redes/instagram.svg" alt="instagram"/></a>
+          <a href="https://www.youtube.com/@PMESP/videos" target="_blank"><img src="./img/redes/youtube.svg" alt="youtube" /></a>
+          <a href="https://web.whatsapp.com/send/?phone=5511969230230" target="_blank"><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
+        </div>
+      </div>
+
+      <div class="footer-informacoes">
+        <h3 class="font-2-l-b cor-0">Navegação</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li><a href="/index.html">Home</a></li>
+            <li><p class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></p></li>
+            <div class="drop-f">
+              <li><a href="/comando.html">Comandante</a></li>
+              <li><a href="/index.html#area">Área de Atuação</a></li>
+              <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+            </div>
+            <li><a href="./galeria.html">Galeria de Fotos</a></li>
+            <li><a href="./enderecos.html">Endereços</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-m cor-6">
+        12ºBPMI © Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+ </body>
+</html>

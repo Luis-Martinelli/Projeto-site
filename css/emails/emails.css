@@ -1,0 +1,64 @@
+.bg {
+  height: 500px;
+  padding: 60px 0;
+}
+.section {
+  padding: 6px 10px;
+  padding-left: 30px;
+  display: grid;
+  text-align: center;
+  background-color: var(--c4);
+  width: 200px;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: inset 16px 0 var(--c1);
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 32px;
+}
+.content::before {
+  content: '';
+  width: 2px;
+  height: 88px;
+  background-color: var(--c10);
+  position: absolute;
+  top: 2px;
+  left: 90px;
+  border-left: 2px dashed var(--c6);
+  opacity: 0.3;
+}
+.content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 80px auto;
+  background-color: var(--c10);
+  width: 370px;
+  border-radius: 8px;
+  box-shadow: -4px 4px 0px 0px var(--c-p2);
+  position: relative;
+  padding: 20px;
+}
+.content img {
+  color: var(--c4);
+}
+.content i {
+  display: grid;
+  align-items: center;
+  font-size: 3.5rem;
+  color: var(--c4);
+}
+.content a {
+  display: grid;
+  align-items: center;
+  padding-left: 20px;
+  color: var(--c4);
+}
+.content a:hover {
+  color: var(--c1);
+}
+.bg a {
+  margin-left: 32px;
+}

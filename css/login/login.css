@@ -8,6 +8,8 @@
   z-index: 2000;
   box-shadow: inset 0 36px var(--c8);
   transition: 1s;
+  -webkit-animation: scale-in-center 0.3s cubic-bezier(0.42, 0, 1, 1);
+  animation: scale-in-center 0.3s cubic-bezier(0.42, 0, 1, 1);
 }
 dialog {
   border: none;
@@ -90,4 +92,14 @@ button {
 }
 .popup .forms .form-element a:hover {
   color: #006699;
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
