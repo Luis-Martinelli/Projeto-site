@@ -108,6 +108,7 @@
 }
 .slide img {
   border-radius: 0px;
+  max-width: 100%;
 }
 .manual-navigation {
   position: absolute;
@@ -131,7 +132,7 @@
 }
 
 #radio1:checked ~ .first {
-  margin-left: 0;
+  margin-left: -18%;
 }
 #radio2:checked ~ .first {
   margin-left: -150%;

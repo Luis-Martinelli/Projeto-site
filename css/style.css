@@ -31,6 +31,8 @@
 @import './enderecos/enderecos.css';
 /* Area de Atuação */
 @import './home/area.css';
+/* Brasão de armas */
+@import './home/shield.css';
 /* Histórico */
 @import './home/history.css';
 /* emails */

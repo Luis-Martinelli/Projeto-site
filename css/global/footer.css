@@ -1,14 +1,12 @@
 .footer-bg {
   background-color: var(--c10);
 }
-
 .footer {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
   gap: 40px;
   padding-top: 60px;
 }
-
 footer:before {
   display: block;
   content: '';
@@ -21,7 +19,6 @@ footer:before {
     rgba(204, 36, 36, 1) 100%
   );
 }
-
 .footer h3 {
   margin-bottom: 32px;
 }
@@ -34,7 +31,6 @@ footer:before {
 .footer-informacoes .menu-f {
   cursor: pointer;
 }
-
 .footer-redes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,7 +42,6 @@ footer:before {
   text-decoration: dashed;
   padding-bottom: 24px;
 }
-
 .footer-contato li:nth-child(even):after {
   content: '';
   display: block;
@@ -55,19 +50,17 @@ footer:before {
   background: var(--c9);
   margin-top: 16px;
 }
-
 .footer-redes img {
   width: 60%;
 }
-
 .footer a:hover {
   color: var(--c0);
 }
 .footer-copy {
   grid-column: 2;
   margin-top: 40px;
+  text-align: center;
 }
-
 .ico-f.ativa {
   transform: rotate(180deg);
   transition: 0.3s;
