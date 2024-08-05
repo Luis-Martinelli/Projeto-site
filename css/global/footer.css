@@ -58,9 +58,13 @@ footer:before {
 }
 .footer-copy {
   grid-column: 2;
-  margin-top: 40px;
   text-align: center;
 }
+.footer-dev {
+  display: grid;
+  align-items: end;
+}
+
 .ico-f.ativa {
   transform: rotate(180deg);
   transition: 0.3s;

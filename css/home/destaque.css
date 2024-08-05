@@ -35,6 +35,7 @@
   border-radius: 4px;
   margin-bottom: 8px;
   box-shadow: -2px 2px 0px 0px var(--c-p3);
+  height: 200px;
 }
 .destaque-item a {
   margin-top: 8px;
