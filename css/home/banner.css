@@ -103,11 +103,12 @@
 .slide {
   position: relative;
   flex-shrink: 0;
-  z-index: -1;
+  z-index: 0;
 }
 .slide img {
   border-radius: 0px;
   max-width: 100%;
+  z-index: -1;
 }
 .manual-navigation {
   position: absolute;

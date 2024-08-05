@@ -139,6 +139,7 @@ header:after {
   transition: 0.5s;
   opacity: 0;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 .dropdown.ativo {
   opacity: 1;
