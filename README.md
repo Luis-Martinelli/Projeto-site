@@ -1,3 +1,13 @@
-Projeto de site organizacional, banner informativo, acesso rápido de aplicações mais usadas, destaque do mês, galeria de fotos.
-Projeto elaborado em HTML, CSS e JavaScript. 
-Futuros upgrades do projeto: Campo de login com acesso controlado, aplicação contará com banco de dados para controle de manutenções e materiais permanentes no setor de TI.    
+Projeto de site organizacional
+Seções:
+  -banner informativo;
+  -acesso rápido de aplicações mais usadas;
+  -funcionário do mês;
+  -área de atuação;
+  -galeria de fotos;
+  -endereços de unidades subordinadas;
+Projeto elaborado em HTML, CSS e JavaScript e plugins para efeito fadein 
+Futuros upgrades do projeto: 
+-área de login com acesso controlado;
+-a aplicação contará com controle de dados com gráficos e filtros de manutenções e materiais permanentes no setor de TI.    
+
