@@ -968,11 +968,10 @@ button {
   align-items: center;
 }
 .destaque-item img {
-  max-width: 150px;
+  max-width: 160px;
   border-radius: 4px;
   margin-bottom: 8px;
   box-shadow: -2px 2px 0 0 var(--c-p3);
-  height: 200px;
 }
 .destaque-item a {
   margin-top: 8px;
@@ -1560,6 +1559,9 @@ button {
   align-self: center;
   box-shadow: -4px 4px 0 0 var(--c-p3);
   border-radius: 10px;
+}
+.enredo h3 {
+  margin-top: 8px;
 }
 .enredo h4 {
   justify-self: center;
