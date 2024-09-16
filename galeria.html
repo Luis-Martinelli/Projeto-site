@@ -50,7 +50,7 @@
     <div class="form-element">
       <form action="">
       <label for="cpf">CPF</label>
-      <input type="text" name="cpf" id="cpf" maxlength="11">
+      <input type="text" name="cpf" id="cpf" oninput="mascara(this)" maxlength="11">
       </div>
      <div class="form-element">
       <label for="senha">Senha</label>
@@ -116,6 +116,23 @@
   <div class="up-to-top" >
     <i class="fa-solid fa-angle-up"></i>
   </div>
+
+  <dialog id="gallery">
+  <div class="gallery-content">
+    <div class="gallery-figure">
+    <button class="gallery-close" title="Close (Esc)" type="button">x</button>
+    <figure>
+      <img class="galerry-img" src="" alt="">
+      <figcaption>
+        <div class="bottom-bar">
+          <div class="gallery-title"></div>
+          <div class="counter">1 de 47</div>
+        </div>
+      </figcaption>
+    </figure>
+    </div>
+  </div>
+</dialog>
 <div class="container">  
 <div class="box-galeria">
   <div class="box-foto" data-anime="200">

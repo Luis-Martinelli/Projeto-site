@@ -15,7 +15,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url(.img/catedral-2.jpg) no-repeat;
+  background: url(../img/catedral.jpg) no-repeat;
   z-index: -1;
   opacity: 0.2;
 }
