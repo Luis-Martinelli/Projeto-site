@@ -77,19 +77,35 @@ footer:before {
 }
 
 @media (max-width: 800px) {
-  .footer img {
+  .footer > img {
     display: none;
-  }
-  .footer {
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 600px) {
   .footer {
-    grid-template-columns: 1fr;
-    gap: 60px;
+    display: block;
+    padding-top: 20px;
   }
   .footer-copy {
     margin-top: 0;
+  }
+  .footer-informacoes {
+    display: none;
+  }
+  .footer p:nth-last-child(-n + 2) {
+    display: none;
+  }
+  .footer-redes a {
+    display: grid;
+    justify-items: center;
+  }
+  .footer-redes p {
+    padding-bottom: 12px;
+  }
+  .footer-redes {
+    padding-bottom: 20px;
+  }
+  .footer-contato ul {
+    margin-bottom: 0;
   }
 }

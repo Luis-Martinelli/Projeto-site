@@ -61,3 +61,26 @@
     display: none;
   }
 }
+@media (max-width: 600px) {
+  .links-bg {
+    padding: 50px 0;
+  }
+  .links-bg h1::before {
+    height: 24px;
+    width: 8px;
+  }
+  .links-item {
+    height: 160px;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .links a:nth-last-child(2) {
+    display: none;
+  }
+  .links-shadow-2 {
+    padding-bottom: 60px;
+  }
+}

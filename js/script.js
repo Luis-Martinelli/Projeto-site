@@ -2,11 +2,21 @@
 const drop = document.querySelector('.dropdown');
 const menu = document.getElementById('dropdown');
 const ico = document.querySelector('.ico');
-
+const screenSize = window.innerWidth;
+const mobileMenu = document.querySelector('.menu-mobile');
 menu.onclick = () => {
-  drop.classList.toggle('ativo');
-  ico.classList.toggle('ativo');
+  if (screenSize > 600) {
+    drop.classList.toggle('ativo');
+    ico.classList.toggle('ativo');
+  }
 };
+function lookThis(e) {
+  window.innerWidth;
+  if (screenSize > 600) {
+    mobileMenu.classList.add('hidden');
+  }
+}
+lookThis();
 //Login
 const showLogin = document.getElementById('show');
 const login = document.querySelector('dialog');
@@ -23,6 +33,22 @@ $('.menu-f').on('click', function () {
   $('.drop-f').slideToggle(800);
   $('.ico-f').toggleClass('ativa');
 });
+//Menu Mobile
+$('#burger-b').on('click', function () {
+  $('.header-menu').slideToggle(600);
+  $('.header-meu').toggleClass('active');
+  subIcon();
+});
+
+function subIcon() {
+  const icon = document.getElementById('icon');
+  const head = document.querySelector('.header');
+  console.log(head);
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-x');
+  head.classList.toggle('active');
+}
+
 // Animação
 new SimpleAnime();
 
@@ -113,16 +139,17 @@ const scrollingDocument = document.scrollingElement || document.documentElement;
 const upToTop = document.querySelector('.up-to-top');
 upToTop.style.transition = '1s';
 // upToTop.style.opacity = 0;
-
 window.onscroll = function () {
-  upToTop.style.opacity = scrollingDocument.scrollTop > 500 ? 1 : 0;
+  if (screenSize > 600) {
+    upToTop.style.opacity = scrollingDocument.scrollTop > 500 ? 1 : 0;
+  } else {
+    upToTop.style.opacity = scrollingDocument.scrollTop > 300 ? 1 : 0;
+    upToTop.style.opacity = 0.8;
+  }
 };
-
 upToTop.onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-
-//Galeria de Fotos
 
 //Banner
 let count = 1;
@@ -130,7 +157,7 @@ document.getElementById('radio1').checked = true;
 
 setInterval(function () {
   nextImage();
-}, 5000);
+}, 6000);
 
 function nextImage() {
   count++;

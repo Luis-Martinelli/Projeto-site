@@ -11,3 +11,11 @@
   margin-right: 10px;
   background-color: var(--c-p2);
 }
+
+@media (max-width: 600px) {
+  .shield h1::before {
+    height: 24px;
+    width: 8px;
+    margin-right: 6px;
+  }
+}

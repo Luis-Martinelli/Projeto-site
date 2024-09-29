@@ -2,13 +2,11 @@
   background-color: var(--c11);
   padding-bottom: 60px;
 }
-
 .history h1 {
   padding-bottom: 60px;
   text-align: center;
   position: relative;
 }
-
 .history h1::before {
   content: '';
   display: inline-block;
@@ -21,7 +19,6 @@
   padding-top: 60px;
   text-align: justify;
 }
-
 .history p::after {
   content: url(/img/dec/bottom-right-p.svg);
   position: absolute;
@@ -43,5 +40,17 @@
 @media (max-width: 800px) {
   .history h1::before {
     height: 24px;
+    width: 8px;
+    margin-right: 6px;
+  }
+  .history h1 {
+    padding-bottom: 20px;
+  }
+  .history p {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .history-bg {
+    padding-bottom: 20px;
   }
 }

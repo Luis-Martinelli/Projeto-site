@@ -2,7 +2,6 @@
   background-color: var(--c11);
   height: 380px;
   margin-bottom: 120px;
-
   /* box-shadow: inset 40px 80px var(--c1); */
 }
 .emphasis h1 {
@@ -44,10 +43,28 @@
 @media (max-width: 800px) {
   .emphasis h1::before {
     height: 24px;
+    width: 8px;
+    margin-right: 6px;
   }
 }
 @media (max-width: 1090px) {
   .destaque {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .destaque-bg {
+    height: 1000px;
+    margin-bottom: 60px;
+  }
+  .destaque {
+    justify-content: center;
+    gap: 32px;
+  }
+  .botao.secundario {
+    padding: 12px 18px;
+  }
+  .emphasis h1 {
+    padding-bottom: 20px;
   }
 }
