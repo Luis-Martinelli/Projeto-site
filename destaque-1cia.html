@@ -61,7 +61,7 @@
        </div>
        <div class="form-element">
         <input type="checkbox" id="remember-me">
-        <label for="remember-me">Lembre-me</label>
+          <label class="lastlabel" for="remember-me">Lembre-me</label>
        </div>
        <div class="form-element">
         <button>Acessar</button>
@@ -90,23 +90,30 @@
       </form>
     </div>
 
-      <nav aria-label="primaria">
-        <ul class="header-menu js-menu font-1-m">
-          <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
-          <li><a href="./galeria.html">Galeria de Fotos</a></li>
-          <li><a href="./enderecos.html">Endereços</a></li>
-          <li><a href="#footer">Contato</a></li>
-        </ul>
-        <button id="show" type="button" class="botao login">Login</button>
-        <div class="dropdown font-1-m">
-          <ul class="dropdown-menu">
-         <!-- <li><a href="./comando.html">Comandante</a></li> -->
-         <li><a href="./index.html#area">Área de Atuação</a></li>
-              <li><a href="./index.html#shield">Heráldica do Brasão</a></li>
-         <li><a href="./index.html#historico">Histórico do Batalhão</a></li>
+    <nav aria-label="primaria" class="js-menu">
+      <button id="burger-b"><i id="icon" class="fa-solid fa-bars"></i>MENU</button>
+
+       <ul class="header-menu font-1-m">
+         <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+         <div class="menu-mobile">
+           <li><a href="/index.html#area">Área de Atuação</a></li>
+             <li><a href="/index.html#shield">Heráldica do Brasão</a></li>
+             <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+         </div>
+         <li><a href="./galeria.html">Galeria de Fotos</a></li>
+         <li><a href="./enderecos.html">Endereços</a></li>
+         <li><a href="#footer">Contato</a></li>
        </ul>
-     </div>
-      </nav>
+       <button id="show" type="button" class="botao login">Login</button>
+       <div class="font-1-m dropdown" data-droptarget="dropdown">
+         <ul class="dropdown-menu">
+        <!-- <li><a href="./comando.html">Comandante</a></li> -->
+        <li><a href="#area">Área de Atuação</a></li>
+        <li><a href="#shield">Heráldica do Brasão</a></li>
+        <li><a href="#historico">Histórico do Batalhão</a></li>
+      </ul>
+    </div>
+     </nav>
        
     </div>
   </header>
@@ -122,21 +129,50 @@
     <section class="container">
       <div data-anime="200" class="enredo">
       <div class="t">
-        <p class="font-1-m">SETEMBRO / 2024</p>
-        <h3>CB PM ELISANGELA</h3>
+        <p class="font-1-m">JANEIRO / 2025</p>
+        <h3>SD PM MARCOS</h3>
         <span></span>
       </div>
       <div class="info ">
         <br>
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedora de tal indicação, a Cb PM Elisângela no mês de setembro de 2024 desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo.  <br>   
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 06SET24 na Av Gastão Dal Farra nº 100, Bairro Demétria, abordou um indivíduo em atitude suspeita, em revista pessoal foram localizadas algumas ferramentas utilizadas para a prática de furtos, tais como alicate, faca e chave de fenda. O indivíduo foi conduzido a DIG e confessou a prática de furtos em datas anteriores no referido bairro. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Não obstante a atuação supra mencionado, a Cb PM Elisangela não mede esforços nas missões a ela atribuidas. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;NCom sua atuação ímpar foi motivo de vários elogios, enaltecendo o nome da Policial Militar do Estado de São Paulo. <br><br>
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Sd PM Lucas Marcos dos Santos é o Policial no mês de janeiro de 2025, desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo.<br>   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No dia 20 de Dezembro realizou a prisão de um indivíduos por tráfico de Drogas. <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No dia 22 de Dezembro realizou a prisão de 03 (três) indivíduos procurados pela justiça, constando passagens pela policia  arts 157,180 e 155; outro individuo  art 155 e o terceiro individuo com passagens pela policia nos arts 171,155,129,306,330 e 344<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Não obstante a atuação supra mencionado, o Sd PM Lucas Marcos  não mede esforços nas missões a ele atribuidas.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Com sua atuação ímpar foi motivo de vários elogios, enaltecendo o nome da Policial Militar do Estado de São Paulo.<br>
+           <br><br>
           </p> 
           <br> <br>
           
       </div>
-      <img data-anime="600" src="./img/pm-do-mes/elisangela.jpg" alt="" class="fadeInDown">
+      <img data-anime="600" src="./img/pm-do-mes/lucas-marcos.jpg" alt="" class="fadeInDown">
+      <h4 class="font-1-m-b cor-10">RICARDO DE SOUZA CUNHA</h4>
+      <p class="font-1-s cor-8">CAP PM - Comandante da 1ª Cia</p>
+    </div>
+    </section>
+  </div>
+
+  <div class="backgroud">
+    <section class="container">
+      <div data-anime="200" class="enredo">
+      <div class="t">
+        <p class="font-1-m">FEVEREIRO / 2025</p>
+        <h3>SD PM KEVIN</h3>
+        <span></span>
+      </div>
+      <div class="info ">
+        <br>
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Sd PM Kevin Pereira de Sá é o Policial no mês de fevereiro de 2025, desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo.<br>   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 12 de janeiro, de posse de informações de tentativa de roubo em estabelecimento comercial, a funcionária relatou as características do autor que pegou alguns objetos e ao chegar no caixa anunciou o roubo com menção de estar armado, outra funcionária informou que não entregaria o dinheiro, o autor evadiu-se sem levar nada. De posse das características, a equipe iniciou o patrulhamento e rapidamente avistou um indivíduo com as mesmas características relatadas pela vítima e com uma sacola da loja nas mãos, demonstrando nervosismo, sendo abordado e submetido à busca pessoal.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Inicialmente, nada de ilícito foi encontrado, na sacola da loja que trazia consigo continham peças de carne embaladas a vácuo. O indivíduo foi identificado e questionado, declarou versões contraditórias, acabando por confirmar ser o autor da tentativa de roubo na loja e que as peças de carne foram furtadas de um supermercado, diante dos fatos foi dada voz de prisão ao autor, posterior a representante da loja e o do supermercado confirmaram os crimes ocorridos, permanecendo o indiciado preso à disposição da justiça pelos crimes de tentativa de roubo e furto consumado.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 15 de janeiro realizou a prisão de um indivíduo procurado pela justiça pelo crime de receptação.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 31 de janeiro realizou a prisão de um indivíduo por tráfico de drogas e procurado pela justiça pelo crime de furto.<br>  
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Com sua atuação ímpar foi motivo de vários elogios, enaltecendo o nome da Polícia Militar do Estado de São Paulo. <br>
+        </p> 
+          <br> <br>
+          
+      </div>
+      <img data-anime="600" src="./img/pm-do-mes/kevin.jpg" alt="" class="fadeInDown">
       <h4 class="font-1-m-b cor-10">RICARDO DE SOUZA CUNHA</h4>
       <p class="font-1-s cor-8">CAP PM - Comandante da 1ª Cia</p>
     </div>
@@ -144,65 +180,39 @@
     
   </div>
 
-
   <div class="backgroud">
     <section class="container">
       <div data-anime="200" class="enredo">
       <div class="t">
-        <p class="font-1-m">AGOSTO / 2024</p>
-        <h3>CB PM RUBENS</h3>
+        <p class="font-1-m">MARÇO / 2025</p>
+        <h3>CB PM ARTHUR</h3>
         <span></span>
       </div>
       <div class="info ">
         <br>
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Cb PM Rubens no mês de agosto de 2024 desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo. <br>   
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 19 de Julho realizou a prisão de um indivíduo procurado pela justiça pelo crime de tráfico de entorpecentes. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 27 de Julho foi acionado via COPOM para atendimento de uma ocorrência de desinteligência, no local o ex-companheiro ameaçava a vítima que possui em seu favor uma medida protetiva, o indivíduo se evadiu correndo para o interior da residência, foi acompanhado pela equipe e detido no pavimento superior sobre a laje. Foi realizada a prisão em flagrante delito do criminoso pelos crimes de descumprimento de medida protetiva e ameaça no contexto de violência doméstica. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 29 de Julho foi acionado via COPOM para atendimento de ocorrência de possível furto. No deslocamento para atender a ocorrência abordou um indivíduo na via com as características, este resistiu a abordagem e desacatou a equipe policial. Após ser imobilizado e algemado confessou ter cometido o furto e indicou a residência a qual teria subtraído uma televisão e onde esta estaria. Diante dos fatos o indivíduo foi preso por furto com aumento de pena pelo repouso noturno e qualificado mediante escalada e rompimento de obstáculo. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Com sua atuação ímpar foi motivo de vários elogios, enaltecendo o nome da Policial Militar do Estado de São Paulo. <br><br>
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Cb PM Arthur Stefano Dias Rodrigues Bonito é o Policial no mês de março de 2025, desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo.<br>   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 22 de fevereiro do ano em curso, teve destaque em 22FEV25  por volta das 02h08min no atendimento de ocorrência em um estabelecimento comercial que havia um homem com propósito suícida portando arma branca encostada no pescoço, juntamente com o apoio de outras equipes o local foi isolado e o Cb PM Arthur ao lado de fora do estabelecimento, iniciou a negociação com Carlos, o qual estava irredutível com a faca no pescoço dizendo que iria se matar, após muitas tratativas foi se acalmando e começou a ouvir mais o policial negociante, momento que saiu correndo em direção ao carro do filho e jogou a faca na rua, ao entrar no veículo sacou uma nova faca menor, tipo de serra, voltando a falar em se matar, sendo necessário reestabelecer as negociações, novamente, após muita conversa, entregou a faca ao Cb РМ Arthur e foi convencido, pacificamente, a ser conduzido até o hospital da Unesp pela equipe de resgate.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Carlos foi conduzido e acompanhado no hospital, em momento mais calmo agradeceu pelo atendimento da Polícia Militar. <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Atuou com extremo comprometimento e profissionalismo, executando com maestria as tratativas de negociação com o tentante e conforme o preconizado no Procedimento Operacional Padrão, atendimento de ocorrência envolvendo pessoas com propósito suicida em posse de arma branca, direcionando seus esforços à solução pacífica da crise e preservação da vida da pessoa com propósito suicida e de terceiros e com isso contribuíram para a elevação do grau de confiabilidade na PMESP, tornando-se merecedor de tal reconhecimento.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Com sua atuação ímpar foi motivo de vários elogios, enaltecendo o nome da Polícia Militar do Estado de São Paulo. <br><br>
           </p> 
           <br> <br>
           
       </div>
-      <img data-anime="600" src="./img/pm-do-mes/cb-rubens.jpg" alt="" class="fadeInDown">
-      <h4 class="font-1-m-b cor-10">CELSO LEANDRO DE ALMEIDA FOGAÇA</h4>
-      <p class="font-1-s cor-8">1º Ten PM - Comandante Int da 1ª Cia</p>
-    </div>
-    </section>
-    
-  </div>
-
-  <div class="backgroud">
-    <section class="container">
-      <div data-anime="200" class="enredo">
-      <div class="t">
-        <p class="font-1-m">JUNHO / 2024</p>
-        <h3>CB PM MACHADO</h3>
-        <span></span>
-      </div>
-      <div class="info ">
-        <br>
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Cb PM Machado no mês de julho de 2024 desempenhou notável trabalho e se destacou no município de Botucatu/SP, atuando com dedicação e profissionalismo. <br>   
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 02 de Julho durante patrulhamento ostensivo com vistas a ilícitos penais no interior do campus universitário da Unesp no distrito de Rubião Jrº, após visualizar três indivíduos em fundada suspeita próximo a um veículo no estacionamento realizou a prisão em flagrante delito dos três indivíduos pelo crime de furto qualificado de catalisadores automotivos, bem como apreendeu o veículo Renault Kwid, máquinas de serra elétrica a bateria, serras de máquina elétricas, cartões bancários e um aparelho celular, estes materiais utilizados pelos criminosos, bem como aprendeu nove catalisadores subtraídos de veículos e que estavam em posse dos criminosos. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Com sua atuação enobreceu e foi motivo de vários elogios, enaltecendo o nome da Instituição Policial Militar. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Não obstante a realização da prisão dos infratores o Cb PM Machado se dedica de forma exemplar prestando serviço na Base Comunitária de Segurança no distrito de Rubião Jr e auxilia de forma impar os civis e Policiais Militares que procuram atendimento no Hospital da Unesp. <br><br>
-          </p> 
-          <br> <br>
-          
-      </div>
-      <img data-anime="600" src="./img/pm-do-mes/machado.jpg" alt="" class="fadeInDown">
-      <h4 class="font-1-m-b cor-10">CELSO LEANDRO DE ALMEIDA FOGAÇA</h4>
-      <p class="font-1-s cor-8">1º Ten PM - Comandante Int da 1ª Cia</p>
+      <img data-anime="600" src="./img/pm-do-mes/arthur.jpg" alt="" class="fadeInDown">
+      <h4 class="font-1-m-b cor-10">RICARDO DE SOUZA CUNHA</h4>
+      <p class="font-1-s cor-8">CAP PM - Comandante da 1ª Cia</p>
     </div>
     <a href="./index.html#destaque" class="botao secundario back"><i class="fa-solid fa-angle-left"></i>voltar</a>
     </section>
     
   </div>
-  <div class="up-to-top" >
-    <i class="fa-solid fa-angle-up"></i>
-  </div>
 
 
+    <div class="up-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+ 
 
   <footer class="footer-bg" id="footer">
     <div class="footer container">

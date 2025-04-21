@@ -57,7 +57,7 @@
        </div>
        <div class="form-element">
         <input type="checkbox" id="remember-me">
-        <label for="remember-me">Lembre-me</label>
+          <label class="lastlabel" for="remember-me">Lembre-me</label>
        </div>
        <div class="form-element">
         <button>Acessar</button>
@@ -86,23 +86,30 @@
       </form>
     </div>
 
-      <nav aria-label="primaria">
-        <ul class="header-menu font-1-m">
-          <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
-          <li><a href="./galeria.html">Galeria de Fotos</a></li>
-          <li><a href="./enderecos.html">Endereços</a></li>
-          <li><a href="#footer">Contato</a></li>
-        </ul>
-        <button id="show" type="button" class="botao login">Login</button>
-        <div class="dropdown font-1-m">
-          <ul class="dropdown-menu">
-         <!-- <li><a href="./comando.html">Comandante</a></li> -->
-         <li><a href="./index.html#area">Área de Atuação</a></li>
-              <li><a href="./index.html#shield">Heráldica do Brasão</a></li>
-         <li><a href="./index.html#historico">Histórico do Batalhão</a></li>
+    <nav aria-label="primaria" class="js-menu">
+      <button id="burger-b"><i id="icon" class="fa-solid fa-bars"></i>MENU</button>
+
+       <ul class="header-menu font-1-m">
+         <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+         <div class="menu-mobile">
+           <li><a href="/index.html#area">Área de Atuação</a></li>
+             <li><a href="/index.html#shield">Heráldica do Brasão</a></li>
+             <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+         </div>
+         <li><a href="./galeria.html">Galeria de Fotos</a></li>
+         <li><a href="./enderecos.html">Endereços</a></li>
+         <li><a href="#footer">Contato</a></li>
        </ul>
-     </div>
-      </nav>
+       <button id="show" type="button" class="botao login">Login</button>
+       <div class="font-1-m dropdown" data-droptarget="dropdown">
+         <ul class="dropdown-menu">
+        <!-- <li><a href="./comando.html">Comandante</a></li> -->
+        <li><a href="#area">Área de Atuação</a></li>
+        <li><a href="#shield">Heráldica do Brasão</a></li>
+        <li><a href="#historico">Histórico do Batalhão</a></li>
+      </ul>
+    </div>
+     </nav>
        
     </div>
   </header>
@@ -118,21 +125,34 @@
     <section class="container">
       <div data-anime="200" class="enredo">
       <div class="t">
-        <p class="font-1-m"> SETEMBRO / 2024</p>
-        <h3>1º SGT PM CELESTINO</h3>
+        <p class="font-1-m">JANEIRO / 2025</p>
+        <h3>3ºSGT PM PEDRO HENRIQUE</h3>
         <span></span>
       </div>
       <div class="info txt-j">
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o 1º Sgt PM Celestino, nos meses de agosto e setembro de 2024, desempenhou um notável trabalho e se destacou no Município de Bofete/SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões administrativas e operacionais, contribuindo assim na redução dos indicadores criminais.<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Por ter em 21AGO24 pelo município de Bofete/SP, localizado e detido um indivíduo na prática do Tràfico de Entorpecentes, apreendendo 77 (setenta e sete) papelotes de substância análoga a Cocaína, 172 (cento e setenta e dois) eppendorfs de substância análoga a Cocaína pesando  0,245 Kg, 45 (quarenta e cinco) papelotes de Flor característica a da Maconha; 35 (trinta e cinco) papelotes substância esverdeada análoga a Maconha, 01 (uma) seringa contendo óleo carcterístico ao extraído da Maconha  pesando 0,202 Kg, 04 (quatro) microtubos de substância análoga ao Skank pesando 0,026 Kg, 140 (cento e quarenta) pedras amareladas análoga a Crack  pesando 0,059 Kg, 02 (dois) comprimidos de Ecstasy pesando 0,006 Kg, 01 (um) comprimido de MD pesando 0,007Kg, 01 (um) papelote de substância análoga a LSD pesando 0,004 Kg, 06 (seis) papelotes de substância análoga a  Haxixe pesando 0,011 Kg, 06 (seis) microtubos de substância análoga a Dry pesando 0,024 Kg, 05 (cinco) papelotes de Meleca pesando 0,008 Kg, 05 (cinco) papelotes de Ice pesando 0,011 Kg, 02 (duas) notas de R$ 10,00, 01 (uma) nota de R$ 5,00, 06 (seis) notas de R$ 2,00, 03 (três) moedas de R$ 1,00, 03 (três) moedas de R$ 0,50 e, 02 (duas) moedas de R$ 0,25, totalizando a quantia de R$ 42,00 em espécie. O indiciado encontrava-se na condição de “PROCURADO” da Justiça.<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O 1º Sgt PM Celestino possui conduta ilibada e, profissionalismo ímpar, enaltecendo o nome da Polícia Militar do Estado de São Paulo, demonstrando lealdade e honrando a confiança nele depositado.  Tais atributos o tornam digno de sua nomeação como PM do mês de setembro de 2024, da 3ª CIA do 12º BPMI.<br>
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o 3° Sgt PM Pedro Henrique, no mès de dezembro de 2024 e janeiro de 2025, desempenhou um notável trabalho na função de CGP III e, se destacou no Municipio de Laranjal Paulista /SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões operacionais, contribuindo assim na redução dos indicadores criminais. <br>   
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Destacou-se por ter:<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No periodo de dezembro de 2024 e janeiro de 2025, se destacou pela sua produtividade individual,
+          sobressaindo aos demais policiais da 3* Cia Sede:<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 04DEZ24, durante o patrulhamento, localizado e detido um individuo, o qual se encontrava na
+          condição de PROCURADO da Justiça: <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 08DEZ24, durante o patrulhamento, localizado um individuo, o qual ao notar a presença da viatura evadiu-se, porém logo foi detido e, ao realizar consulta na base inteligente de dados, constou estar na situação de
+          PROCURADO da Justiça: <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 13DEZ24 durante o patrulhamento, localizado e detido um individuo e, após cosulta na base
+inteligente de dados, contou estar na condição de PROCURADO da Justiça: <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia 26DEZ24, durante o patrulhamento, localizado e detido uma mulher, a qual se encontrava deitada num colchão e, escondia debaixo de um cobertor 01 (um) celular, 16 (dezesseis) flaconetes contendo pò branco análogo a Cocaina - pesando 0,023 Kg. 01 (um) flaconete contendo substância amarelada análoga a Crack — pesando 0,002 Kg e. R$ 160,00 (cento e sessenta reais) em espécie;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No dia O2JAN24, durante o patrulhamento, localizado e detido um individuo e, ao realizar consulta na
+          base inteligente de dados, constou estar na situação de PROCURADO da Justiça. <br>          
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O 3° Sgt PM Pedro Henrique possui conduta ilibada e, profissionalismo impar, enaltecendo o nome da
+          Policia itilitar do Estado de São Paulo, demonstrando lealdade e honrando a confiança nele depositado. Tais atributos o tornam digno de sua nomeação como PM do més de janeiro de 2025, da 3* CIA do 12º BPMI.
+           <br><br>
           </p> 
-          <br> <br> 
-          <br>
+        <br> <br> 
+        <br>
       </div>
-      <img data-anime="600" src="./img/pm-do-mes/celestino.jpg" alt="" class="fadeInDown">
-      <h4 class="font-1-m-b cor-10">VÍCTOR FERNANDES GODOY</h4>
-      <p class="font-1-s cor-8">1º Ten PM - Comandante Int da 3ª Cia</p>
+      <img data-anime="600" src="./img/pm-do-mes/sgt-pedro-henrique.jpg" alt="" class="fadeInDown">
+      <h4 class="font-1-m-b cor-10">SANDRO INACIO DE LIMA CARVALHO</h4>
+      <p class="font-1-s cor-8">CAP PM - Comandante da 3ª Cia</p>
     </div>
     </section>
   </div>
@@ -141,60 +161,56 @@
     <section class="container">
       <div data-anime="200" class="enredo">
       <div class="t">
-        <p class="font-1-m">AGOSTO / 2024</p>
-        <h3>2º SGT PM VALDRIGHI</h3>
+        <p class="font-1-m"> FEVEREIRO / 2025</p>
+        <h3>SD PM HIGOR</h3>
         <span></span>
       </div>
       <div class="info txt-j">
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o 2º Sgt PM Valdrighi, no mês de agosto de 2024, desempenhou um notável trabalho e se destacou no Município de Laranjal Paulista/SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões operacionais, contribuindo assim na redução dos indicadores criminais.<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Destacam-se as seguintes ocorrências:<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- No dia 02AGO24 durante o patrulhamento, avistou um indvíduo o qual, ao notar a presença policial evadiu-se, porém após um breve acompanhamento, foi detido e, localizado em sua posse 0,014 Kg de Crack, 0,059 Kg de Cocaína, e a quantia de R$ 106,10 em espécie. Conduzido à delegacia, onde foi ratificado a prisão em flagrante,  ficando o autor a disposição da Justiça, pelo crime de Tráfico de Entorpecentes;<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- No dia 06AGO durante o patrulhamento, avistou um indivíduo o qual , ao perceber a viatura policial, demonstrou grande nervosismo, o que motivou a abordagem, e durante a busca pessoal, foi localizado em sua posse 0,081 Kg de Cocaína, 0,044 Kg de Crack e, 0,101 Kg de Maconha. Conduzido à delegacia, onde foi ratificado a prisão em  flagrante,  ficando o autor a disposição da Justiça, pelo crime de Tráfico de Entorpecentes;<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- No dia 07AGO durante o patrulhamento, avistou um indvíduo, o qual foi abordado, em um local conhecido pelo comércio de entorpecente e, diante disso, foi realizada busca pessoal, porém nada de ilícito foi localizado em sua posse. Realizada consulta via PRODESP, o mesmo encontrava-se em Liberdade Assistida – Medida Cautela, porém encontrava-se em local e horários incompatíveis com o determinado pela Justiça. Elaborado BOPM e dado ciência ao Ministério Público; <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- No dia 14AAGO durante o patrulhamento, avistou um indvíduo, o qual foi abordado, em local conhecido pelo comércio de entorpecentes, após realizada busca pessoal, foi localizado em sua posse 0,179 Kg de Crack e a quantia de R$ 31,75 em espécie. Consultado via PRODESP, o autor encontra-se com Medida Cautelar. Autor conduzido à delegacia, onde o Delegado plantonista elaborou TCO de Porte de Entorpecentes. <br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;              O 2º Sgt PM Valdrighi possui conduta ilibada e, profissionalismo ímpar, enaltecendo o nome da Polícia Militar do Estado de São Paulo, demonstrando lealdade e honrando a confiança nele depositado.  Tais atributos o tornam digno de sua nomeação como PM do mês de agosto de 2024, da 3ª CIA do 12º BPMI. <br>
-          </p> 
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Sd PM Higor, no mês de janeiro/fevereiro de 2025, desempenhou um notável trabalho no Município de Bofete/SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões operacionais, contribuindo assim na redução dos indicadores criminais.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 18JAN25 durante o patrulhamento pelo município de Bofete/SP, após receber uma denúncia de Tráfico de Entorpedentes, localizado e detido um indivíduo e, durante a busca pessoal, foi encontrado em sua posse, 02 (dois) flaconetes de substância branca em pó, análoga a Cocaína, 01 (uma) pedra amarelada análoga a Crack e R$ 36,00 (trinta e seis reais) em espécie. Ao realizar uma varredura pelas imediações, foram localizados: R$ 116,25 (cento e dezesseis reais e vinte e cinco centavos) em espécie, 01 (um) Celular Xiaomi Redmi Note 8 na cor azul; 01 (um) Celular Samsung A32 na cor branca; 01 (uma) folha de caderno contendo anotações do tráfico; 05 (cinco) flaconetes de substância análoga a maconha sintética (k2), pesando 0,004 Kg; 07 (sete) papelotes de substância análoga a Haxixe, pesando 0,005 Kg; 06 (seis) papelotes de substância análoga a LSD, pesando 0,011 Kg; 18 (dezoito) papelotes de substância análoga a Maconha “ICE”, pesando 0,038 Kg; 22 (vinte e dois) papelotes de substância em pó branco análoga a Cocaína, pesando 0,022 Kg; 02 (duas) seringas de substância líquida análoga a óleo de maconha, contendo o volume total de 07 ml; 02 (dois) comprimidos de substância análoga a Ecstasy, pesando 0,002 Kg; 04 (quatro) frascos de substância líquida análoga a lança perfume, contendo o volume de  120 ml; 82 (oitenta e dois) flaconetes de substância branca em pó análoga a Cocaína, pesando 0,098 Kg; 41 (quarenta e uma) pedras de substância amarelada análoga a crack, pesando 0,021 Kg; 58 (cinquenta e oito) papelotes de substância esverdeada análoga a maconha e flor de maconha, pesando 0,158 Kg. Diante dos fatos, após dado voz de prisão,  o Indiciado juntamente com os objetos e os entorpecentes apreendidos, foram apresentados na Central de Flagrantes, ficando a disposição da Justiça; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 28JAN25 durante o patrulhamento pelo município de Torre de Pedra/SP, localizado e detido 01 (um) indíviduo, o qual ao ter seu registro geral verificado pela base inteligente de dados, constou estar na situação de “PROCURADO”; <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 11FEV25 durante o patrulhamento pelo município de Bofete/SP, munido de 01 (um) Mandado de Prisão (MP) realizado diligência, localizando e detendo 01 (um) indíviduo, o qual se encontrava na situação de “PROCURADO”. <br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O Sd PM Higor possui conduta ilibada e, profissionalismo ímpar, enaltecendo o nome da Polícia Militar do Estado de São Paulo, demonstrando lealdade e honrando a confiança nele depositado.  Tais atributos o tornam digno de sua nomeação como PM do mês de fevereiro de 2025, da 3ª CIA do 12º BPMI. <br>
+        </p> 
           <br> <br> 
           <br>
       </div>
-      <img data-anime="600" src="./img/pm-do-mes/sgt-valdrighi.jpg" alt="" class="fadeInDown">
-      <h4 class="font-1-m-b cor-10">VÍCTOR FERNANDES GODOY</h4>
-      <p class="font-1-s cor-8">1º Ten PM - Comandante Int da 3ª Cia</p>
+      <img data-anime="600" src="./img/pm-do-mes/higor.jpg" alt="" class="fadeInDown">
+      <h4 class="font-1-m-b cor-10">SANDRO INACIO DE LIMA CARVALHO</h4>
+      <p class="font-1-s cor-8">CAP PM - Comandante da 3ª Cia</p>
     </div>
     </section>
-  </div>
-
-  <div class="up-to-top" >
-    <i class="fa-solid fa-angle-up"></i>
   </div>
 
   <div class="backgroud">
     <section class="container">
       <div data-anime="200" class="enredo">
       <div class="t">
-        <p class="font-1-m">JUNHO / 2024</p>
-        <h3>1º SGT PM TOCCHIO</h3>
+        <p class="font-1-m">MARÇO / 2025</p>
+        <h3>CB PM GREGÓRIO</h3>
         <span></span>
       </div>
       <div class="info txt-j">
-        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o 1º Sgt PM Tocchio, no mês de julho de 2024, desempenhou um notável trabalho e se destacou no Município de Conchas/SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões administrativas e operacionais, contribuindo assim na redução dos indicadores criminais.<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Durante o cumprimento de mandado de busca expedido pelo Fórum da Comarca de Conchas, realizou diligências em dois locais distintos, onde localizou no local número 01: 01 (um) indiciado e, apreendeu os seguintes produtos: 01 (um)  Revólver marca Rossi Cal. 32 numeração suprimida, 05 (cinco) munições Cal. 32 intactas e, 01 cápsula Cal. 32 deflagrada, R$ 324,50 (trezentos e vinte e quatro reais e cinquenta centavos) em em espécie, 1.022 (mil e vinte e duas) porções de saubstância análoga a crack pesando 1,500 kg, 1.012 (mil e doze) porções de substância análoga a cocaína pesando 1,250 kg,  684 (seiscentos e oitenta e quatro) porções de substância análoga a maconha pesando 1,000 kg,  01 (um) caderno contendo anotações proveniente do Tráfico de Drogas, 03 (três) aparelhos celulares, 01 (uma) Câmera Leboss ID8522516564 e,  no local número 02, localizou  01 (um) indiciado e, apreendeu:  R$ 7.578,50 (sete mil, quinhentos e setenta e oito reais e cinquenta centavos) em espécie,  1.487 (mil, quatrocentos e oitenta e sete) porções de  substância análoga a Cocaína pesando 1,450 kg, 173 (cento e setenta e três) porções de substância análoga a  maconha pesando 2,450 kg, 1.072 (mil e setenta e duas) porções de substância análoga a crack pesando 0,850 kg,  05 (cinco) aparelhos celulares, 03 (três) balanças de precisão, 03 (três) rádios comunicadores com base,  01 (um) caderno com anotações proveniente do tráfico.<br>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dado voz de prisão aos indiciados e conduzidos à Central de Flagrantes de Botucatu, onde o delegado de plantão, ratificou a prisão em flagrante, recolhendo os indiciados a carceragem, ficando à disposição da Justiça. Os entorpecentes apreendidos contabilizou um total de: 2,572 Kg de Crack, 2,499 Kg de Cocaína, 3,450 de Maconha e R$ 7.903,00 em espécie.<br>
+        <p  data-anime="400" class="p1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Merecedor de tal indicação, o Cb PM Gregório, no mês de fevereiro/março de 2025, desempenhou um notável trabalho no Município de Bofete/SP atuando com dedicação e profissionalismo, sendo destaque no cumprimento das missões operacionais, contribuindo assim na redução dos indicadores criminais.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 23FEV25 durante o patrulhamento, deparado com um indivíduo saindo de uma área verde, o qual ao notar a presença policial, tentou evadir, porém, logo foi alcançado e detido. Ao realizar consulta pela base inteligente de dados da PMESP, constou que, o indivíduo se encontrava na condição de “PROCURADO” da Justiça;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 04MAR25 durante o atendimento de uma ocorrência de Descumprimento de Medida Cautelar, localizado e detido um indivíduo que havia invadido a residência da ex-esposa;<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em 11MAR25 de posse de informações da Polícia Federal que, um indivíduo estava morando na área ruaral e, encontrava-se na condição de  “PROCURADO” da Justiça,  iniciado diligências, se deslocando até o local informado, localizando e, detendo o indivíduo.<br>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;O Cb PM Gregório possui conduta ilibada e, profissionalismo ímpar, enaltecendo o nome da Polícia Militar do Estado de São Paulo, demonstrando lealdade e honrando a confiança nele depositado.  Tais atributos o tornam digno de sua nomeação como PM do mês de março de 2025, da 3ª CIA do 12º BPMI.<br>
           </p> 
           <br> <br> 
           <br>
       </div>
-      <img data-anime="600" src="./img/pm-do-mes/sgt-tochio.jpg" alt="" class="fadeInDown">
-      <h4 class="font-1-m-b cor-10">VÍCTOR FERNANDES GODOY</h4>
-      <p class="font-1-s cor-8">1º Ten PM - Comandante Int da 3ª Cia</p>
+      <img data-anime="600" src="./img/pm-do-mes/gregorio.jpg" alt="" class="fadeInDown">
+      <h4 class="font-1-m-b cor-10">SANDRO INACIO DE LIMA CARVALHO</h4>
+      <p class="font-1-s cor-8">CAP PM - Comandante da 3ª Cia</p>
     </div>
     <a href="./index.html#destaque" class="botao secundario back"><i class="fa-solid fa-angle-left"></i>voltar</a>
     </section>
   </div>
+
   <div class="up-to-top" >
     <i class="fa-solid fa-angle-up"></i>
   </div>
-
 
   <footer class="footer-bg" id="footer">
     <div class="footer container">

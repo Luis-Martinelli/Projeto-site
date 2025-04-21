@@ -60,3 +60,20 @@
     margin-right: 0;
   }
 }
+@media (max-width: 600px) {
+  .galeria-bg h1:before {
+    height: 24px;
+    width: 8px;
+    margin-right: 6px;
+  }
+  .galeria-bg {
+    padding: 50px 0;
+  }
+  .box-galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .box-foto {
+    margin-bottom: 0;
+  }
+}

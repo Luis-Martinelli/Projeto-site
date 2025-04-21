@@ -3,9 +3,10 @@
   padding-bottom: 60px;
 }
 .history h1 {
-  padding-bottom: 60px;
+  padding-top: 60px;
   text-align: center;
   position: relative;
+  background-color: var(--c11);
 }
 .history h1::before {
   content: '';
@@ -20,12 +21,12 @@
   text-align: justify;
 }
 .history p::after {
-  content: url(/img/dec/bottom-right-p.svg);
+  content: url(../img/dec/bottom-right-p.svg);
   position: absolute;
   right: 132px;
 }
 .history p::before {
-  content: url(/img/dec/top-left-p.svg);
+  content: url(../img/dec/top-left-p.svg);
   position: absolute;
   left: 132px;
 }

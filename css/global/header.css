@@ -27,8 +27,8 @@
 }
 
 .form input[type='text'] {
-  padding: 8px;
-  border-radius: 4px 0px 0px 4px;
+  padding: 8px 0px 8px 16px;
+  border-radius: 60px 0px 0px 60px;
   background: var(--c1);
   font: 400 1rem/1.5 Roboto, sans-serif;
   border: 1px solid var(--c1);
@@ -37,7 +37,7 @@
 }
 .form input[type='text']:focus {
   outline: none;
-  border-color: var(--c-p1);
+  border: 2px solid var(--c-p1);
 }
 .form {
   display: grid;
@@ -171,7 +171,7 @@ header:after {
 .ico {
   transition: 0.5s;
 }
-.menu-mobile.hidden{
+.menu-mobile.hidden {
   display: none;
 }
 
@@ -253,11 +253,12 @@ header:after {
   .form {
     margin-bottom: 20px;
   }
- 
+
   #menu-burger li {
     border-bottom: 1px solid var(--c9);
   }
   #burger-b {
+    font-family: Kanit;
     display: flex;
     gap: 4px;
     align-items: center;
@@ -267,9 +268,12 @@ header:after {
     color: var(--c3);
     font-size: 1.5rem;
     position: absolute;
-    left:15px;
+    left: 15px;
     width: calc(100% - 30px);
     top: 145px;
+  }
+  #burger-b i {
+    font-size: 1.2rem;
   }
   .header {
     margin-bottom: 40px;
@@ -281,10 +285,14 @@ header:after {
     padding-left: 12px;
   }
   .modal.active {
-    left: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .dropdown {
+    display: none;
   }
 }
-
 @media (min-width: 600px) {
   #burger-b {
     display: none;

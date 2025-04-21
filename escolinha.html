@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./css/style.min.css" as="style">
+    
+    <script src="https://kit.fontawesome.com/0bb2a92b24.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
+    <title>Escolinha da PM</title>
+  </head>
+
+<body>
+
+  <div class="modal">
+    <div class="modal-header">
+      <i class="fa-solid fa-circle-exclamation"></i>
+    </div>
+      <div class="modal-body">
+        <p>Insira o ID da escala</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close">OK</button>
+      </div>
+</div>
+<div class="modalShadow"></div>
+
+  <dialog class="popup">
+    <div class="bar"></div>
+    <span class="close-btn"><i class="fa-classic fa-x"></i></span>
+    <div class="forms">
+      <div class="login-logo">
+        <img src="./img/icons/login-12.svg" alt="">
+      </div>
+      <div class="form-element">
+        <form action="">
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" oninput="mascara(this)" maxlength="11">
+        </div>
+       <div class="form-element">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha">
+       </div>
+       <div class="form-element">
+        <input type="checkbox" id="remember-me">
+          <label class="lastlabel" for="remember-me">Lembre-me</label>
+       </div>
+       <div class="form-element">
+        <button>Acessar</button>
+       </div>
+      <div class="form-element">
+        <a href="">Esqueceu a Senha?</a>
+      </form>
+      </div>
+     </div>
+    </dialog>
+
+  <header class="header-bg">
+    <div class="container header">
+        <a class="logo-2" href="./"><img src="./img/icons/brasao-nav.png" alt="Brasão do Batalhão" />
+        12ºBPMI</a>
+
+        <div>
+          <form class="form">
+            <input id="idDejem"
+            class="form-control"
+            name="id"
+            type="text"
+            placeholder="Digite o ID da escala"
+            maxlength="7"
+            required="required"
+            value=""
+              
+            /><button class="botao dejem" type="button" onclick="validar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+
+        <nav aria-label="primaria" class="js-menu">
+          <button id="burger-b"><i id="icon" class="fa-solid fa-bars"></i>MENU</button>
+   
+           <ul class="header-menu font-1-m">
+             <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+             <div class="menu-mobile">
+               <ul id="menu-burger">
+             <li><a href="/index.html#area">Área de Atuação</a></li>
+             <li><a href="/index.html#shield">Heráldica do Brasão</a></li>
+             <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+           </ul>
+             </div>
+             <li><a href="./galeria.html">Galeria de Fotos</a></li>
+             <li><a href="./enderecos.html">Endereços</a></li>
+             <li><a href="#footer">Contato</a></li>
+           </ul>
+           <button id="show" type="button" class="botao login">Login</button>
+           <div class="font-1-m dropdown" data-droptarget="dropdown">
+             <ul class="dropdown-menu">
+            <!-- <li><a href="./comando.html">Comandante</a></li> -->
+            <li><a href="#area">Área de Atuação</a></li>
+            <li><a href="#shield">Heráldica do Brasão</a></li>
+            <li><a href="#historico">Histórico do Batalhão</a></li>
+          </ul>
+        </div>
+         </nav>
+       
+    </div>
+  </header>
+  <div class="intro-bg">
+    <h1 class="font-1-xxl cor-0">Escolinha da PM</h1>
+  </div>
+  
+  <section class="sobre-bg">
+    <div class="sobre-info">
+      <h1>Sobre</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quisquam excepturi numquam minima distinctio asperiores quaerat, officiis explicabo fugit cumque quas a nobis obcaecati sunt, reprehenderit, aliquid voluptatibus pariatur itaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fugit qui non.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia illum, soluta cum aliquam, vero laboriosam rem nostrum delectus modi omnis culpa quae, unde obcaecati cupiditate excepturi rerum atque sequi nisi!</p>
+    </div>
+    <div class="sobre-img">
+      <img src="https://placehold.co/250x400?text=Escolinha+da+PM+1&font=poppins" alt="">
+    </div>
+    <div  class="sobre-img">
+      <img src="https://placehold.co/250x400?text=Escolinha+da+PM+2&font=poppins" alt="">
+    </div>
+  </section>
+
+  <section class="project">
+    <h1>O Projeto</h1>
+    <div class="project-container">
+      <div class="project-item">
+        <h2 class="blue">Aulas</h2>
+        <img src="https://placehold.co/400x400" alt="aula">
+      </div>
+      <div class="project-item">
+        <h2 class="yellow">Interação</h2>
+        <img src="https://placehold.co/400x500" alt="interação">
+      </div>
+      <div class="project-item">
+        <h2 class="red">Policiamento com Cães</h2>
+        <img src="https://placehold.co/400x400" alt="exibição do canil">
+      </div>
+    </div>
+  </section>
+
+  <section class="qualidade" id="qualidade">
+		<div class="qualidade-item">
+			<h2>Temas Abordados:</h2>
+      <ul>
+        <li><strong>Civismo e Cidadania:</strong> As aulas discutem a importância do respeito às leis, dos direitos e deveres do cidadão, e como cada um pode contribuir para a construção de uma sociedade mais justa.</li>
+        <li>Patriotismo: Promovemos o amor à pátria, explicando a história do nosso país e a importância dos símbolos nacionais. As crianças aprendem sobre a diversidade cultural e a necessidade de respeitar as diferenças.</li>
+      </ul>
+		</div>
+		
+		<div class="qualidade-item">
+			<h2>Integração</h2>
+      <ul>
+        <li><strong>Interação com Viaturas:</strong> As crianças têm a oportunidade de conhecer de perto as viaturas e equipamentos utilizados pela Polícia Militar, despertando o interesse e o respeito pela profissão.</li>
+        <li>Visita ao Quartel: Um tour pelo quartel é oferecido, permitindo que os alunos vejam de perto o cotidiano dos policiais e compreendam a importância do trabalho em equipe e da disciplina.</li>
+      </ul>
+		</div>
+		
+		<div class="qualidade-item">
+			<h2>Policiamento com Cães</h2>
+			<ul>
+        <li><strong>Exibição da Equipe do Canil:</strong> Um momento especial onde os alunos podem interagir com os cães policiais, aprendendo sobre o treinamento e a função desses animais na segurança pública.</li>
+        <li>Segurança Pública: Através de palestras e atividades, as crianças conhecem o papel da Polícia Militar na sociedade, entendendo a importância da segurança e do trabalho em equipe.</li>
+      </ul>
+		</div>
+		
+	</section>
+  
+    <div class="up-to-top" >
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+  <footer class="footer-bg" id="footer">
+    <div class="footer container">
+      <img src="./img/12bpmi.png" alt="Brasão do 12ºBPMI" />
+      <div class="footer-contato">
+        <h3 class="font-2-l-b cor-0">Contato</h3>
+        <ul class="font-2-m cor-5">
+          <li><a href="tel:+551438825656"><i class="fa-solid fa-phone"></i> (14) 3882-5656</a></li>
+          <li><a href="mailto:12bpmi@policiamilitar.sp.gov.br"><i class="fa-regular fa-envelope"></i> 12bpmi@policiamilitar.sp.gov.br</a>
+          <li>Rua Gen. Júlio Marcondes Salgado, 414 - Vila Silvinha</li>
+          <li>Botucatu - São Paulo <a href="https://maps.app.goo.gl/xXBNVTf65fhgcVyt7" target="_blank"><i class="fa-solid fa-map-location-dot"></i></a></li>
+        </ul>
+         <div class="footer-redes">
+          <p class="font-2-m cor-4">
+            Siga nossas redes sociais
+          </p>
+          <a href="https://www.facebook.com/12BPMI" target="_blank"><img src="./img/redes/facebook.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/12bpmi/" target="_blank"><img src="./img/redes/instagram.svg" alt="instagram"/></a>
+          <a href="https://www.youtube.com/@PMESP/videos" target="_blank"><img src="./img/redes/youtube.svg" alt="youtube" /></a>
+          <a href="https://web.whatsapp.com/send/?phone=5511969230230" target="_blank"><img src="./img/redes/whatsapp.svg" alt="whatsapp" /></a>
+        </div>
+      </div>
+
+      <div class="footer-informacoes">
+        <h3 class="font-2-l-b cor-0">Navegação</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li><a href="./">Home</a></li>
+            <li><p class="menu-f" >Institucional <i class="ico-f fa-solid fa-caret-down"></i></p></li>
+            <div class="drop-f">
+              <!-- <li><a href="/comando.html">Comandante</a></li> -->
+              <li><a href="./index.html#area">Área de Atuação</a></li>
+              <li><a href="./index.html#shield">Heráldica do Brasão</a></li>
+              <li><a href="./index.html#historico">Histórico do Batalhão</a></li>
+            </div>
+            <li><a href="./galeria.html">Galeria de Fotos</a></li>
+            <li><a href="./enderecos.html">Endereços</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-m cor-6">
+        12ºBPMI © Todos os direitos reservados.
+      </p>
+      <p class="footer-dev font-2-s cor-6">
+        Desenvolvedor Web | Cb PM Martinelli 
+      <span>v.1.0.0</span>
+      </p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+ </body>
+</html>

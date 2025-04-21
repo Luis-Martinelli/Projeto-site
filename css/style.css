@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 /* Global */
 @import './global/global.css';
 /* Header */
@@ -29,6 +26,8 @@
 @import './galeria/galeria.css';
 /* Endereços */
 @import './enderecos/enderecos.css';
+/* Video*/
+@import './home/video.css';
 /* Area de Atuação */
 @import './home/area.css';
 /* Brasão de armas */
@@ -39,3 +38,5 @@
 @import './emails/emails.css';
 /* detaque-em */
 @import './destaque/destaque-em.css';
+/* escolinha */
+@import './escolinha/escolinha.css';

@@ -6,14 +6,14 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 2000;
-  /* box-shadow: inset 0 36px var(--c8); */
   transition: 1s;
   -webkit-animation: scale-in-center 0.3s cubic-bezier(0.42, 0, 1, 1);
   animation: scale-in-center 0.3s cubic-bezier(0.42, 0, 1, 1);
+  position: relative;
 }
 dialog {
   border: none;
-  transition: 1s;
+  transition: 0.5s;
 }
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
@@ -24,23 +24,21 @@ dialog::backdrop {
   top: 0px;
 }
 .popup i {
-  box-sizing: border-box;
   cursor: pointer;
 }
 .popup span {
   box-sizing: border-box;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 0px 4px 0px 4px;
 }
 .popup span:hover {
+  color: var(--c2);
   background: red;
   transition: 0.3s;
-  color: var(--c2);
 }
 .login-logo {
   display: grid;
   justify-items: center;
-  margin-bottom: -30px;
 }
 .popup .forms .form-element {
   margin: 15px 0px;
@@ -50,34 +48,39 @@ button {
   font-family: poppins;
   color: var(--c11);
 }
+.form-element label {
+  margin-left: 12px;
+}
+.lastlabel {
+  margin: 0 !important;
+}
 
 .popup .forms .form-element input[type='text'],
 .popup .forms .form-element input[type='password'] {
   margin-top: 5px;
   display: inline-block;
   width: 100%;
-  padding: 12px 0px 12px 12px;
+  padding: 12px;
   font-size: 1rem;
   outline: none;
   border: 1px solid #aaa;
-  border-radius: 5px;
+  border-radius: 32px;
   color: var(--c9);
   box-sizing: border-box;
 }
-
-.popup .form-element input[type='checkbox'] {
-  margin-left: 5px;
+.popup .forms .form-element input[type='checkbox'] {
+  margin-left: 12px;
 }
 
 .popup .forms .form-element button {
   width: 100%;
-  height: 40px;
   border: none;
   outline: none;
+  padding: 8px 0;
   font-size: 16px;
   background-color: var(--c12);
   color: var(--c1);
-  border-radius: 4px;
+  border-radius: 32px;
   cursor: pointer;
 }
 

@@ -62,3 +62,27 @@
 .bg a {
   margin-left: 32px;
 }
+@media (max-width: 600px) {
+  .content {
+    width: 300px;
+    grid-template-columns: 80px 1fr;
+  }
+  .content a {
+    font-size: 1rem !important;
+    padding-left: 0;
+    padding-bottom: 12px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .bg {
+    height: 1020px;
+  }
+  .bg a {
+    margin: 0;
+  }
+  .botao.secundario.back {
+    margin-top: 42px;
+    margin-left: 42px;
+  }
+}

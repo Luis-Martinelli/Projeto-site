@@ -213,3 +213,51 @@
 .name-title p:nth-last-child(1) {
   margin-top: -12px;
 }
+@media (max-width: 600px) {
+  .endereco-bg h1:before {
+    height: 24px;
+    width: 8px;
+    margin-right: 6px;
+  }
+  .endereco-bg {
+    padding: 50px 0;
+  }
+  .section-bg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-bg div {
+    display: grid;
+    margin-left: 100px;
+    margin-bottom: 60px;
+    /* margin-left: auto; */
+    margin-right: auto;
+  }
+  .item-2::before,
+  .item-3::before,
+  .item-4::before,
+  .item-5::before {
+    display: none;
+  }
+  .item-1::after {
+    display: none;
+  }
+  .item-1::before {
+    display: none;
+  }
+  .item-12::before {
+    display: none;
+  }
+  .item-6::before {
+    display: none;
+  }
+  .item-8::before {
+    display: none;
+  }
+  .section-bg .item-6 {
+    grid-column: 1;
+    grid-row: 3;
+    margin-right: 0;
+  }
+}

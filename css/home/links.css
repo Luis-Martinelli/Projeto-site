@@ -26,7 +26,7 @@
 }
 
 .links-bg ::after {
-  content: url(/img/dec/top-right.svg);
+  content: url(../img/dec/top-right.svg);
   position: absolute;
   right: 134px;
 }
@@ -71,6 +71,7 @@
   }
   .links-item {
     height: 160px;
+    box-sizing: content-box;
   }
   .links {
     display: grid;

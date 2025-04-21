@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preload" href="./css/style.css" as="style">
     
     <script src="https://kit.fontawesome.com/0bb2a92b24.js" crossorigin="anonymous"></script>
@@ -21,6 +21,9 @@
     <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
     <title>12º BPM/I</title>
   </head>
 
@@ -41,7 +44,7 @@
 
   <dialog class="popup">
     <div class="bar"></div>
-    <span class="close-btn"><i class="fa-classic fa-x"></i></span>
+    <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
     <div class="forms">
       <div class="login-logo">
         <img src="./img/icons/login-12.svg" alt="">
@@ -57,7 +60,7 @@
        </div>
        <div class="form-element">
         <input type="checkbox" id="remember-me">
-        <label for="remember-me">Lembre-me</label>
+        <label class="lastlabel" for="remember-me">Lembre-me</label>
        </div>
        <div class="form-element">
         <button>Acessar</button>
@@ -98,7 +101,6 @@
               <li><a href="#area">Área de Atuação</a></li>
               <li><a href="#shield">Heráldica do Brasão</a></li>
               <li><a href="#historico">Histórico do Batalhão</a></li>
-            </ul>
           </div>
           <li><a href="./galeria.html">Galeria de Fotos</a></li>
           <li><a href="./enderecos.html">Endereços</a></li>
@@ -126,15 +128,22 @@
         <input type="radio" name="radio-btn" id="radio3"> 
         <!-- slides -->
         <div class="slide first">
+          
+            <video id="video" webkit-playsinline="true" playsinline="" autoplay=""  loop="" > <source src="./img/zoom-12i.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slide">
+          <!-- <a id="btn-banner" href="./escolinha.html" target="_blank">Saiba Mais</a> -->
+          <img id="img" src="./img/banner-papodemike.jpg" alt=""/>
+        </div>
+
+        <div class="slide">
           <img id="img" src="./img/banner-12I.jpg" alt=""/>
         </div>
-        <div class="slide">
-          <a href="" target="_blank">
-          <img id="img" src="./img/banner-nova-intranet.jpg" alt=""/></a>
-        </div>
-        <div class="slide">
-          <a href="https://policiamilitar.sp.gov.br/unidades/ccomsoc/papodemike/" target="_blank">
-          <img id="img" src="./img/banner-papodemike.jpg" alt=""/></a>
+
+        <div class="arrow-navigation">
+          <span><i id="left" class="fa-solid fa-chevron-left" onclick="prevImage()"></i></span>
+          <span><i id="right" class="fa-solid fa-chevron-right" onclick="nextImage()"></i></span>
         </div>
          <!-- navigation auto -->
         <div class="navigation-auto">
@@ -159,7 +168,12 @@
     </div>
   
 <section class="links-shadow">
-<div class="container links">
+  <div class="container links">
+    <a href="https://sistemasopr.intranet.policiamilitar.sp.gov.br/Pmesp.ROe/#/login/"  target="_blank">
+      <div  class="links-item"> <img src="./img/icons/boe.png" alt="RO-e" >
+        <p class="font-1-m">B.O Eletrônico</p> 
+     </div>
+    </a>
   <a href="https://ead.policiamilitar.sp.gov.br/login/index.php"  target="_blank">
     <div  class="links-item"> <img src="./img/icons/ead.png" alt="EAD-PVT" >
       <p class="font-1-m">EAD e PVT</p> 
@@ -222,6 +236,11 @@
         <p class="font-1-s">Lista de e-mails</p> 
      </div>
     </a>
+    <a href="https://forms.gle/ZmEFCxny6EaYidQ67">
+      <div  class="links-item"> <img src="./img/icons/vtr.png" alt="Logo-formulario" >
+        <p class="font-1-s">Solicitação de Viatura para deslocamento</p> 
+     </div>
+    </a>
   </div>
 </section>
 
@@ -230,33 +249,34 @@
   <div class="destaque-bg">
    <div class="destaque container">
   <div class="destaque-item">
-    <img src="./img/pm-do-mes/Acioli.jpg" alt="Policial destaque EM">
+    <img src="./img/pm-do-mes/juliana.jpg" alt="Policial destaque EM">
     <p class="font-1-m cor-4">E.M.</p><a href="./destaque-em.html" class="botao secundario">Saiba Mais</a> 
   </div>
   
   <div class="destaque-item">
-    <img src="./img/pm-do-mes/elisangela.jpg" alt="Policial destaque 1ª CIA">
+    <img src="./img/pm-do-mes/arthur.jpg" alt="Policial destaque 1ª CIA">
     <p class="font-1-m cor-4">1ª CIA</p> <a href="./destaque-1cia.html" class="botao secundario">Saiba Mais</a> 
   </div>
 
   <div class="destaque-item">
-    <img src="./img/pm-do-mes/esequiel.jpg" alt="Policial destaque 2ª CIA">
+    <img src="./img/pm-do-mes/novaes.jpg" alt="Policial destaque 2ª CIA">
     <p class="font-1-m cor-4">2ª CIA</p><a href="./destaque-2cia.html" class="botao secundario">Saiba Mais</a>  
   </div>
 
   <div class="destaque-item">
-    <img src="./img/pm-do-mes/celestino.jpg" alt="Policial destaque 3ª CIA">
+    <img src="./img/pm-do-mes/gregorio.jpg" alt="Policial destaque 3ª CIA">
     <p class="font-1-m cor-4">3ª CIA</p><a href="./destaque-3cia.html" class="botao secundario">Saiba Mais</a> 
   </div>
 
   <div class="destaque-item">
-    <img src="./img/pm-do-mes/ten-magnani.jpg" alt=""Policial destaque FT">
+    <img src="./img/pm-do-mes/braz.jpg" alt=""Policial destaque FT">
     <p class="font-1-m cor-4">CIA FT</p> <a href="./destaque-ciaft.html" class="botao secundario">Saiba Mais</a> 
   </div>
   
  </div>
 </div>
 </section>
+
 <span class="span"></span>
 <article class="area" id="area">
   <h1 class="font-1-xxl cor-12">Área de Atuação</h1>
@@ -276,7 +296,7 @@
 </article>
 
   <article class="history" id="historico">
-    <h1 class="font-1-xxl cor-12">Histórico do Batalhão</h1>
+    <h1 class="font-1-xxl cor-1">Histórico do Batalhão</h1>
     <div class="history-bg">
     <p class="font-1-s cor-3 container">
       Em 1920, pouquíssimo é o que se sabe a respeito da atuação policial nessa época. O anuário de Botucatu registra uma administração policial, cuja frente se encontrava um Delegado de Policia auxiliado por um escrivão e o Major Pm Francisco B. da Cunha, um escrevente e um subdelegado. No dia 12 de setembro de 1957 a 3º Cia de Fuzileiros incorporada ao 7º Batalhão de Caçadores que se transformou em 4ª Cia de Fuzileiros Incorporada e foi instalada na Rua Rafael Sampaio, nº 81 Bairro Boa Vista, Botucatu. </p>

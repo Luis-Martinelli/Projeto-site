@@ -60,7 +60,7 @@
        </div>
        <div class="form-element">
         <input type="checkbox" id="remember-me">
-        <label for="remember-me">Lembre-me</label>
+          <label class="lastlabel" for="remember-me">Lembre-me</label>
        </div>
        <div class="form-element">
         <button>Acessar</button>
@@ -89,23 +89,30 @@
       </form>
     </div>
 
-      <nav aria-label="primaria">
-        <ul class="header-menu font-1-m">
-          <li><p id="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
-          <li><a href="./galeria.html">Galeria de Fotos</a></li>
-          <li><a href="./enderecos.html">Endereços</a></li>
-          <li><a href="#footer">Contato</a></li>
-        </ul>
-        <button id="show" type="button" class="botao login">Login</button>
-        <div class="dropdown font-1-m">
-          <ul class="dropdown-menu">
-         <!-- <li><a href="./comando.html">Comandante</a></li> -->
-         <li><a href="./index.html#area">Área de Atuação</a></li>
-              <li><a href="./index.html#shield">Heráldica do Brasão</a></li>
-         <li><a href="./index.html#historico">Histórico do Batalhão</a></li>
+    <nav aria-label="primaria" class="js-menu">
+      <button id="burger-b"><i id="icon" class="fa-solid fa-bars"></i>MENU</button>
+
+       <ul class="header-menu font-1-m">
+         <li><p id="dropdown" data-droplink="dropdown">Institucional <i class="ico fa-solid fa-caret-down"></i></p></li>
+         <div class="menu-mobile">
+           <li><a href="/index.html#area">Área de Atuação</a></li>
+             <li><a href="/index.html#shield">Heráldica do Brasão</a></li>
+             <li><a href="/index.html#historico">Histórico do Batalhão</a></li>
+         </div>
+         <li><a href="./galeria.html">Galeria de Fotos</a></li>
+         <li><a href="./enderecos.html">Endereços</a></li>
+         <li><a href="#footer">Contato</a></li>
        </ul>
-     </div>
-      </nav>
+       <button id="show" type="button" class="botao login">Login</button>
+       <div class="font-1-m dropdown" data-droptarget="dropdown">
+         <ul class="dropdown-menu">
+        <!-- <li><a href="./comando.html">Comandante</a></li> -->
+        <li><a href="#area">Área de Atuação</a></li>
+        <li><a href="#shield">Heráldica do Brasão</a></li>
+        <li><a href="#historico">Histórico do Batalhão</a></li>
+      </ul>
+    </div>
+     </nav>
        
     </div>
   </header>
@@ -123,8 +130,8 @@
       <div class="content font-1-m">
         <img src="./img/icons/email.png"/>
         <div>
-        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip3.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P3 ➜</a>
-        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip3escalas.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P3 Escalas ➜</a>
+        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip3.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P3</a>
+        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip3escalas.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P3 Escalas</a>
       </div>
       </div>
     </div>
@@ -136,8 +143,8 @@
       <div class="content font-1-m">
         <img src="./img/icons/email.png"/>
       <div>
-      <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip4.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P4 ➜</a>
-      <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip4financa.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P4 Finanças ➜</a>
+      <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip4.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P4</a>
+      <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmip4financa.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-P4 Finanças</a>
       </div>
       </div>
     </div>
@@ -149,7 +156,7 @@
         <div class="content font-1-m">
         <img src="./img/icons/email.png"/>
         <div>
-        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmimotomec.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Motomec ➜</a>
+        <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmimotomec.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Motomec</a>
         </div>
         </div>
       </div>
@@ -161,7 +168,7 @@
           <div class="content font-1-m">
         <img src="./img/icons/email.png"/>
           <div>
-          <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmireserva.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Reserva de Armas ➜</a>
+          <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmireserva.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Reserva de Armas</a>
           </div>
           </div>
         </div>
@@ -173,7 +180,7 @@
               <div class="content font-1-m">
               <img src="./img/icons/email.png"/>
               <div>
-              <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmitelematica.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Telemática ➜</a>
+              <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmitelematica.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-Telemática</a>
               </div>
               </div>
             </div>
@@ -185,7 +192,7 @@
                 <div class="content font-1-m">
                  <img src="./img/icons/email.png"/>
                 <div>
-                <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmisjd.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-SPJMD ➜</a>
+                <a href="http://vmwfcnprd01.cmdo.policiamilitar.sp.gov.br/Funcional/12bpmisjd.nsf/iNotes/Mail/?OpenDocument" target="_blank">Correio-SPJMD</a>
                 </div>
                 </div>
               </div>

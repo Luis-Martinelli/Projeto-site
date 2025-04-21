@@ -15,7 +15,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url(/img/catedral.jpg) no-repeat;
+  background: url(../img/catedral.jpg) no-repeat;
   z-index: -1;
   opacity: 0.2;
 }
@@ -99,5 +99,8 @@
   }
   .area span {
     display: none;
+  }
+  .area-div img {
+    margin-left: -12px;
   }
 }

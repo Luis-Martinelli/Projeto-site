@@ -54,7 +54,6 @@
   align-self: center;
 }
 .back {
-  position: absolute;
   padding-left: 20px;
   margin-top: 32px;
 }
@@ -68,4 +67,32 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 26px;
+}
+@media (max-width: 600px) {
+  .backgroud {
+    padding: 40px 0;
+    height: auto;
+  }
+  .t span::after {
+    width: 320px;
+    opacity: 0.7;
+    bottom: 10px;
+  }
+  .t::after {
+    margin-top: -17px;
+  }
+  .enredo {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    margin: 0;
+  }
+  .enredo img {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 40%;
+    margin-top: 20px;
+  }
+  .info {
+    width: 100%;
+  }
 }

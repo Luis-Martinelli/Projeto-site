@@ -138,7 +138,6 @@ initScrollSuave();
 const scrollingDocument = document.scrollingElement || document.documentElement;
 const upToTop = document.querySelector('.up-to-top');
 upToTop.style.transition = '1s';
-// upToTop.style.opacity = 0;
 window.onscroll = function () {
   if (screenSize > 600) {
     upToTop.style.opacity = scrollingDocument.scrollTop > 500 ? 1 : 0;
@@ -157,12 +156,19 @@ document.getElementById('radio1').checked = true;
 
 setInterval(function () {
   nextImage();
-}, 6000);
+}, 8000);
 
 function nextImage() {
   count++;
   if (count > 3) {
     count = 1;
+  }
+  document.getElementById('radio' + count).checked = true;
+}
+function prevImage() {
+  count--;
+  if (count < 1) {
+    count = 3;
   }
   document.getElementById('radio' + count).checked = true;
 }
