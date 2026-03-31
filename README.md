@@ -4,8 +4,10 @@ Site institucional desenvolvido para centralizar informações, facilitar o aces
 
 📸 Preview
 
+/img/screenshots/print1.png
+/img/screenshots/print2.png
+/img/screenshots/footer.png
 
-/assets/preview.png
 
 📌 Funcionalidades
 📢 Banner informativo com destaques importantes
