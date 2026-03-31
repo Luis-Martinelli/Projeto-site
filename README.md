@@ -33,4 +33,9 @@ Site institucional desenvolvido para centralizar informações, facilitar o aces
 ├── index.html # Página principal <br>
 └── README.md # Documentação do projeto <br>
 
-🔮 Roadmap (Futuras Melhorias) 🔐 Implementação de autenticação (login com controle de acesso) 📊 Dashboard interativo com: Gráficos de manutenções Filtros avançados Controle de materiais permanentes (TI)
+🔮 Roadmap (Futuras Melhorias) <br>
+🔐 Implementação de autenticação (login com controle de acesso) <br>
+📊 Dashboard interativo com: <br>
+Gráficos de manutenções <br>
+Filtros avançados <br>
+Controle de materiais permanentes (TI)
