@@ -11,8 +11,26 @@ Site institucional desenvolvido para centralizar informações, facilitar o aces
 
 
 📌 Funcionalidades <br>
-📢 Banner informativo com destaques importantes ⚡ Acesso rápido às aplicações mais utilizadas 🏆 Destaque para funcionário do mês 🏢 Apresentação da área de atuação 🖼️ Galeria de fotos institucional 📍 Listagem de endereços das unidades subordinadas 🛠️ Tecnologias Utilizadas 💻 HTML5 🎨 CSS3 ⚙️ JavaScript ✨ Plugins de animação (fade-in) ✨ Plugins lightbox2 (galeria de fotos)
+📢 Banner informativo com destaques importantes <br>
+⚡ Acesso rápido às aplicações mais utilizadas <br>
+🏆 Destaque para funcionário do mês <br>
+🏢 Apresentação da área de atuação <br>
+🖼️ Galeria de fotos institucional <br>
+📍 Listagem de endereços das unidades subordinadas <br> <br>
+🛠️ Tecnologias Utilizadas 
+💻 HTML5 <br>
+🎨 CSS3 <br>
+⚙️ JavaScript <br>
+✨ Plugins de animação (fade-in) <br>
+🖼️ Lightbox2 (galeria de fotos) <br>
 
-📂 Estrutura do Projeto 📁 projeto-site-organizacional │ ├── 📁 css # Arquivos de estilo ├── 📁 img # Imagens, ícones e arquivos estáticos ├── 📁 js # Scripts JavaScript ├── index.html # Página principal └── README.md # Documentação do projeto
+📂 Estrutura do Projeto <br><br>
+📁 projeto-site-organizacional <br>
+│ <br>
+├── 📁 css # Arquivos de estilo <br>
+├── 📁 img # Imagens, ícones e arquivos estáticos <br>
+├── 📁 js # Scripts JavaScript <br>
+├── index.html # Página principal <br>
+└── README.md # Documentação do projeto <br>
 
 🔮 Roadmap (Futuras Melhorias) 🔐 Implementação de autenticação (login com controle de acesso) 📊 Dashboard interativo com: Gráficos de manutenções Filtros avançados Controle de materiais permanentes (TI)
